@@ -1,29 +1,21 @@
 {
-  "subTitle": "Ask us anything about our brand and products, and get factual responses.",
+  "subTitle": "Pregúntanos cualquier cosa sobre nuestros productos y servicios, y obtén respuestas precisas.",
   "faqs": [
     {
-      "question": "What types of tools are included in the Starter Kit?",
-      "answer": "The Starter Kit features essential hand and power tools for diverse DIY projects, including hammers, drills, screwdrivers, and a variety of fasteners. It's a curated selection to help beginners and experienced DIYers alike tackle most home improvement tasks."
+      "question": "¿Qué ocurre cuando el producto posee una falla?",
+      "answer": "Cada componente del producto es importado desde Europa, lo que garantiza que están sujetos a rigurosas pruebas de calidad y vienen con certificaciones correspondientes. Las fallas por fatiga de material y/o accesorios son prácticamente inexistentes. Sin embargo, todos los insumos y materiales cuentan con una garantía de cinco años."
     },
     {
-      "question": "Can I upgrade from the Starter Kit to the Professional Toolbox?",
-      "answer": "Absolutely! You can upgrade to the Professional Toolbox at any time to access a wider range of high-quality tools, enjoy priority customer support, and receive exclusive content. Contact our support team for a seamless transition."
+      "question": "¿Qué sucede si la instalación quedó con un problema?",
+      "answer": "La instalación es realizada por técnicos expertos, por lo que las fallas por instalación son poco comunes. En caso de que ocurra un problema post-instalación, nuestro servicio técnico evaluará en terreno el motivo de la imperfección y procederá con la reparación. La garantía por falla de instalación es de seis meses desde la recepción del producto por parte del cliente."
     },
     {
-      "question": "What discounts are available for bulk orders through the Professional Toolbox plan?",
-      "answer": "Professional Toolbox members are entitled to exclusive discounts on bulk orders, the percentage of which may vary depending on the order volume. Get in touch with us to discuss your needs, and we'll provide a tailored discount structure."
+      "question": "Si deseo cambiar el día o la hora de la visita a mi hogar, ¿debo pagar extra?",
+      "answer": "Las visitas técnicas a terreno son programadas con el cliente. Si el cliente solicita un cambio de fecha u horario, se reprogramará la visita sin problema. Existe flexibilidad para adaptarse a las necesidades del cliente. Las visitas tienen un costo solo fuera de Santiago."
     },
     {
-      "question": "What kind of customer support can I expect?",
-      "answer": "All our customers receive dedicated email support. With the Starter Kit, you'll receive our standard support, while the Professional Toolbox plan upgrades you to priority support, meaning faster response times and specialized assistance."
-    },
-    {
-      "question": "How current are the online resources and tutorials?",
-      "answer": "We regularly update our online resources and tutorials to reflect the latest trends in DIY and construction, as well as introductions to new tools and techniques. Our material aims to be comprehensive and user-friendly for all skill levels."
-    },
-    {
-      "question": "Does ScrewFast offer services for large-scale construction projects?",
-      "answer": "Yes, our Enterprise Solutions are designed for larger companies requiring comprehensive services. We provide consultation, planning, and supply of high-grade tools and materials, as well as staffing solutions for substantial construction needs. Contact us for a customized quote."
+      "question": "¿Por cuánto tiempo me cubre la garantía?",
+      "answer": "La garantía cubre cinco años para el material, motores e insumos, y seis meses para la instalación de los productos. En el caso de las láminas de seguridad para vidrios, la garantía es de diez años."
     }
   ]
 }

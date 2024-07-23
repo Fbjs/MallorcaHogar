@@ -1,79 +1,83 @@
 <!-- Carousel Component -->
 <div class="max-w-6xl mx-auto">
-  <div id="default-carousel" class="relative overflow-hidden" data-carousel="static">
-      <!-- Carousel Wrapper -->
-      <div class="relative h-[600px]">
-          <!-- Carousel Items -->
-          <div class="absolute inset-0 transition-opacity duration-700 ease-in-out opacity-100" data-carousel-item>
-              <img src="https://www.mallorcahogar.cl/images/galeria-01-crop-u2746.jpg" class="w-full h-full object-cover" alt="Item 1">
-          </div>
-          <div class="absolute inset-0 transition-opacity duration-700 ease-in-out opacity-0" data-carousel-item>
-              <img src="https://www.mallorcahogar.cl/images/galeria-02-crop-u4236.jpg" class="w-full h-full object-cover" alt="Item 2">
-          </div>
-          <div class="absolute inset-0 transition-opacity duration-700 ease-in-out opacity-0" data-carousel-item>
-              <img src="https://www.mallorcahogar.cl/images/galeria-03.jpg" class="w-full h-full object-cover" alt="Item 3">
-          </div>
-          <div class="absolute inset-0 transition-opacity duration-700 ease-in-out opacity-0" data-carousel-item>
-              <img src="https://www.mallorcahogar.cl/images/galeria-04-crop-u4254.jpg" class="w-full h-full object-cover" alt="Item 4">
-          </div>
-          <div class="absolute inset-0 transition-opacity duration-700 ease-in-out opacity-0" data-carousel-item>
-              <img src="https://www.mallorcahogar.cl/images/galeria-05-crop-u4263.jpg" class="w-full h-full object-cover" alt="Item 5">
-          </div>
-          <div class="absolute inset-0 transition-opacity duration-700 ease-in-out opacity-0" data-carousel-item>
-              <img src="https://www.mallorcahogar.cl/images/galeria-06-crop-u4272.jpg" class="w-full h-full object-cover" alt="Item 6">
-          </div>
-          <div class="absolute inset-0 transition-opacity duration-700 ease-in-out opacity-0" data-carousel-item>
-              <img src="https://www.mallorcahogar.cl/images/galeria-07-crop-u4281.jpg" class="w-full h-full object-cover" alt="Item 7">
-          </div>
-          <div class="absolute inset-0 transition-opacity duration-700 ease-in-out opacity-0" data-carousel-item>
-              <img src="https://www.mallorcahogar.cl/images/galeria-08-crop-u4290.jpg" class="w-full h-full object-cover" alt="Item 8">
-          </div>
-      </div>
+    <div id="default-carousel" class="relative overflow-hidden" data-carousel="static">
+        <!-- Carousel Wrapper -->
+        <div class="relative h-[600px]">
+            <!-- Carousel Items -->
+            <div class="absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-100" data-carousel-item>
+                <img src="/src/images/contenido/galeria-01-crop-u2746.jpg" class="w-full h-full object-cover rounded-lg shadow-lg" alt="Item 1">
+            </div>
+            <div class="absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-0" data-carousel-item>
+                <img src="/src/images/contenido/galeria-02-crop-u4236.jpg" class="w-full h-full object-cover rounded-lg shadow-lg" alt="Item 2">
+            </div>
+            <div class="absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-0" data-carousel-item>
+                <img src="/src/images/contenido/galeria-03.jpg" class="w-full h-full object-cover rounded-lg shadow-lg" alt="Item 3">
+            </div>
+            <div class="absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-0" data-carousel-item>
+                <img src="/src/images/contenido/galeria-04-crop-u4254.jpg" class="w-full h-full object-cover rounded-lg shadow-lg" alt="Item 4">
+            </div>
+            <div class="absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-0" data-carousel-item>
+                <img src="/src/images/contenido/galeria-05-crop-u4263.jpg" class="w-full h-full object-cover rounded-lg shadow-lg" alt="Item 5">
+            </div>
+            <div class="absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-0" data-carousel-item>
+                <img src="/src/images/contenido/galeria-06-crop-u4272.jpg" class="w-full h-full object-cover rounded-lg shadow-lg" alt="Item 6">
+            </div>
+            <div class="absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-0" data-carousel-item>
+                <img src="/src/images/contenido/galeria-07-crop-u4281.jpg" class="w-full h-full object-cover rounded-lg shadow-lg" alt="Item 7">
+            </div>
+            <div class="absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-0" data-carousel-item>
+                <img src="/src/images/contenido/galeria-08-crop-u4290.jpg" class="w-full h-full object-cover rounded-lg shadow-lg" alt="Item 8">
+            </div>
+        </div>
+  
+        <!-- Carousel Indicators -->
+        <div class="absolute bottom-4 left-1/2 flex -translate-x-1/2 space-x-3 z-30">
+            <button type="button" class="w-4 h-4 rounded-full bg-white/60 hover:bg-white transition-shadow duration-300 shadow-md" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+            <button type="button" class="w-4 h-4 rounded-full bg-white/60 hover:bg-white transition-shadow duration-300 shadow-md" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+            <button type="button" class="w-4 h-4 rounded-full bg-white/60 hover:bg-white transition-shadow duration-300 shadow-md" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+            <button type="button" class="w-4 h-4 rounded-full bg-white/60 hover:bg-white transition-shadow duration-300 shadow-md" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+            <button type="button" class="w-4 h-4 rounded-full bg-white/60 hover:bg-white transition-shadow duration-300 shadow-md" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+            <button type="button" class="w-4 h-4 rounded-full bg-white/60 hover:bg-white transition-shadow duration-300 shadow-md" aria-label="Slide 6" data-carousel-slide-to="5"></button>
+            <button type="button" class="w-4 h-4 rounded-full bg-white/60 hover:bg-white transition-shadow duration-300 shadow-md" aria-label="Slide 7" data-carousel-slide-to="6"></button>
+            <button type="button" class="w-4 h-4 rounded-full bg-white/60 hover:bg-white transition-shadow duration-300 shadow-md" aria-label="Slide 8" data-carousel-slide-to="7"></button>
+        </div>
+    </div>
+  
+    <p class="mt-5 text-center text-gray-600 text-lg font-medium">Explora nuestra gama de persianas, rollers, toldos y más. Calidad y estilo para tus espacios.</p>
+  
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const carousel = document.getElementById('default-carousel');
+            if (!carousel) {
+                console.error('El carrusel no se encontró.');
+                return;
+            }
 
-      <!-- Carousel Indicators -->
-      <div class="absolute bottom-4 left-1/2 flex -translate-x-1/2 space-x-3 z-30">
-          <button type="button" class="w-4 h-4 rounded-full bg-white/60 hover:bg-white transition" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-          <button type="button" class="w-4 h-4 rounded-full bg-white/60 hover:bg-white transition" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-          <button type="button" class="w-4 h-4 rounded-full bg-white/60 hover:bg-white transition" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-          <button type="button" class="w-4 h-4 rounded-full bg-white/60 hover:bg-white transition" aria-label="Slide 4" data-carousel-slide-to="3"></button>
-          <button type="button" class="w-4 h-4 rounded-full bg-white/60 hover:bg-white transition" aria-label="Slide 5" data-carousel-slide-to="4"></button>
-          <button type="button" class="w-4 h-4 rounded-full bg-white/60 hover:bg-white transition" aria-label="Slide 6" data-carousel-slide-to="5"></button>
-          <button type="button" class="w-4 h-4 rounded-full bg-white/60 hover:bg-white transition" aria-label="Slide 7" data-carousel-slide-to="6"></button>
-          <button type="button" class="w-4 h-4 rounded-full bg-white/60 hover:bg-white transition" aria-label="Slide 8" data-carousel-slide-to="7"></button>
-      </div>
-  </div>
+            const items = Array.from(carousel.querySelectorAll('[data-carousel-item]'));
+            const indicators = Array.from(carousel.querySelectorAll('[data-carousel-slide-to]'));
+            let currentIndex = 0;
 
-  <p class="mt-5 text-center text-gray-600">Explora nuestra gama de persianas, rollers, toldos y más. Calidad y estilo para tus espacios.</p>
+            function showItem(index: number) {
+                items.forEach((item, i) => {
+                    item.style.opacity = i === index ? '1' : '0';
+                    item.style.zIndex = i === index ? '1' : '0';
+                });
+                indicators.forEach((indicator, i) => {
+                    indicator.classList.toggle('bg-white', i === index);
+                    indicator.classList.toggle('bg-white/60', i !== index);
+                });
+            }
 
-  <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
-  <script>
-      document.addEventListener('DOMContentLoaded', function () {
-          const carousel = document.getElementById('default-carousel');
-          const items = Array.from(carousel.querySelectorAll('[data-carousel-item]'));
-          const indicators = Array.from(carousel.querySelectorAll('[data-carousel-slide-to]'));
-          let currentIndex = 0;
+            function showNextItem() {
+                currentIndex = (currentIndex + 1) % items.length;
+                showItem(currentIndex);
+            }
 
-          function showItem(index) {
-              items.forEach((item, i) => {
-                  item.style.opacity = i === index ? '1' : '0';
-                  item.style.zIndex = i === index ? '1' : '0';
-              });
-              indicators.forEach((indicator, i) => {
-                  indicator.classList.toggle('bg-white', i === index);
-                  indicator.classList.toggle('bg-white/60', i !== index);
-              });
-          }
+            // Auto-play every 5 seconds
+            setInterval(showNextItem, 5000);
 
-          function showNextItem() {
-              currentIndex = (currentIndex + 1) % items.length;
-              showItem(currentIndex);
-          }
-
-          // Auto-play every 5 seconds
-          setInterval(showNextItem, 5000);
-
-          // Initialize first item
-          showItem(currentIndex);
-      });
-  </script>
+            // Initialize first item
+            showItem(currentIndex);
+        });
+    </script>
 </div>
