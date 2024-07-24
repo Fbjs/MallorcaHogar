@@ -1,9 +1,9 @@
 import { defineConfig } from "astro/config";
 import tailwind from "@astrojs/tailwind";
-import vercelStatic from "@astrojs/vercel/static";
 import sitemap from "@astrojs/sitemap";
 import compressor from "astro-compressor";
 import starlight from "@astrojs/starlight";
+import netlify from "@astrojs/netlify";  // Importa el adaptador de Netlify
 
 // https://astro.build/config
 export default defineConfig({
@@ -123,5 +123,5 @@ export default defineConfig({
     clientPrerender: true,
     directRenderScript: true,
   },
-  adapter: vercelStatic(),
+  adapter: netlify(),  // Usa el adaptador de Netlify
 });
