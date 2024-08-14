@@ -14,14 +14,14 @@ interface Props {
   first?: boolean;
   second?: boolean;
 }
+
 // Set class based on 'first' property
-// If 'first' is present, show the tab content immediately
 const firstClass = first ? "" : "hidden";
+
 // Set class based on 'second' property
-// If 'second' is present, use an alternate style for the image
 const secondClass = second
-  ? "shadow-xl aspect-[5/4] bg-neutral-300 dark:bg-neutral-600 object-cover p-3 lg:aspect-auto shadow-neutral-200 rounded-xl dark:shadow-neutral-900/[.2]"
-  : "shadow-xl aspect-[3/2] object-cover lg:aspect-auto shadow-neutral-200 rounded-xl dark:shadow-neutral-900/[.2]";
+  ? "shadow-xl bg-neutral-300 dark:bg-neutral-600 object-cover rounded-xl w-full h-[75vh] max-w-[90vw] mx-auto"
+  : "shadow-xl object-cover rounded-xl w-full h-[75vh] max-w-[90vw] mx-auto";
 
 /*
 first: This property should be set to true for the initial TabContent component
@@ -41,14 +41,17 @@ This is the full example:
 ---
 
 <!-- Container for tab content that controls visibility and accessibility -->
-<div id={id} role="tabpanel" class={firstClass} aria-labelledby={aria}>
-  <!-- Astro Image component to display the image with dynamic classes based on the 'second' property -->
-  <Image
-    src={src}
-    alt={alt}
-    class={secondClass}
-    draggable={"false"}
-    format={"avif"}
-    loading={"eager"}
-  />
+<div id={id} role="tabpanel" class={`${firstClass} relative`} aria-labelledby={aria}>
+  <!-- Container to ensure the image takes up more space -->
+  <div class="relative w-full flex justify-center">
+    <!-- Astro Image component to display the image with dynamic classes based on the 'second' property -->
+    <Image
+      src={src}
+      alt={alt}
+      class={secondClass}
+      draggable={"false"}
+      format={"avif"}
+      loading={"eager"}
+    />
+  </div>
 </div>

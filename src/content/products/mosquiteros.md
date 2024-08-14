@@ -1,12 +1,12 @@
 ---
 title: "Múlitles beneficios en nuestras persianas"
-description: "Persianas"
+description: "Mosquiteros"
 main:
-  id: 1
+  id: 5
   content: |
-  imgCard: "/src/assets/contenido/persiana-1.jpg"
-  imgMain: "/src/assets/contenido/persiana-1.jpg"
-  imgAlt: "Persiana"
+  imgCard: "/src/assets/contenido/mosquitero-1.jpg"
+  imgMain: "/src/assets/contenido/persiana.png"
+  imgAlt: "mosquitero"
 tabs:
   - id: "tabs-with-card-item-1"
     dataTab: "#tabs-with-card-1"
@@ -51,5 +51,5 @@ specificationsRight:
 blueprints:
   first: "@/images/blueprint-1.avif"
   second: "@/images/blueprint-2.avif"
-slug: persianas
+slug: mosquitero
 ---

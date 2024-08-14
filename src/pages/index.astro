@@ -46,15 +46,10 @@ const avatarSrcs: Array<string> = [
     avatars={avatarSrcs}
     rating=`<span class="font-bold">4.8</span> / 5`
     starCount={4}
-    reviews=`From Over <span class="font-bold">12.8k</span> Reviews`
+    reviews=``
     src={heroImage}
     alt="Stack of ScrewFast product boxes containing assorted hardware tools"
   />
-
-  <!--ClientsSection
-    title="Trusted by Industry Leaders"
-    subTitle="Experience the reliability chosen by industry giants."
-  /-->
 
   <!--FeaturesGeneral
     title="Meeting Industry Demands"
@@ -63,7 +58,6 @@ const avatarSrcs: Array<string> = [
     alt="ScrewFast products in floating boxes"
     features={features}
   /-->
-  <FeaturesGeneral />
 
   <FeaturesNavs
     title=`Conoce los productos más <span class="text-yellow-500 dark:text-yellow-400">populares y seguros</span> para tu hogar.`
@@ -97,9 +91,16 @@ const avatarSrcs: Array<string> = [
     ]}
   />
 
+    <ClientsSection
+    title="Confiado por líderes de la industria."
+    subTitle="Experimenta la fiabilidad elegida por los gigantes del sector."
+  />
+
+  <FeaturesGeneral />
+
   <TestimonialsSection
     title="Transforma Tu Espacio con Mallorca Hogar"
-    subTitle="Desde 2014, en Mallorca Hogar nos dedicamos a mejorar la calidad de vida a través de la seguridad y protección de hogares y propiedades. Experimenta la vanguardia en tecnología y calidad en cada proyecto."
+    subTitle="En Mallorca Hogar nos dedicamos a mejorar la calidad de vida a través de la seguridad y protección de hogares y propiedades. Experimenta la vanguardia en tecnología y calidad en cada proyecto."
     testimonials={[
       {
         content:
@@ -112,24 +113,24 @@ const avatarSrcs: Array<string> = [
     ]}
     statistics={[
       {
-        count: "8+ años",
+        count: "12+ años",
         description:
           "de experiencia en seguridad y protección del hogar",
       },
-      {
+      /*{
         count: "2014",
         description:
           "año de fundación de Mallorca Hogar",
-      },
+      },*/
       {
         count: "100%",
         description:
           "dedicación a la calidad y atención al cliente",
       },
-      {
+      /*{
         count: "200+",
         description: "proyectos exitosos en hogares y oficinas",
-      },
+      },*/
     ]}
   />
 

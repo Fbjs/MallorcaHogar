@@ -3,19 +3,19 @@ const navBarLinks = [
   { name: "Inicio", url: "/" },
   { name: "Productos", url: "/products" },
   //{ name: "Servicios", url: "/services" },
-  { name: "Blog", url: "/blog" },
+  //{ name: "Blog", url: "/blog" },
   { name: "Contacto", url: "/contact" },
 ];
 // An array of links for footer
 const footerLinks = [
   {
-    section: "Ecosystem",
+    section: "",
     links: [
-      { name: "Documentation", url: "/welcome-to-docs/" },
-      { name: "Tools & Equipment", url: "/products" },
-      { name: "Construction Services", url: "/services" },
+      { name: "", url: "/welcome-to-docs/" },
+      { name: "", url: "/products" },
+      { name: "", url: "/services" },
     ],
-  },
+  },/*
   {
     section: "Company",
     links: [
@@ -24,7 +24,7 @@ const footerLinks = [
       { name: "Careers", url: "#" },
       { name: "Customers", url: "#" },
     ],
-  },
+  },*/
 ];
 // An object of links for social icons
 const socialLinks = {

@@ -1,55 +1,54 @@
 ---
-title: "SF-AB A765"
+title: "Confort y comodidad"
 description: "Toldos" 
 main:
   id: 2
   content: |
-    Introducing the SF-AB A765 Assorted Screw Set – the ultimate solution for your screw fastening needs. This comprehensive set includes a wide variety of screws meticulously curated to tackle various projects with ease and precision.
-  imgCard: "/src/assets/contenido/toldo.png"
-  imgMain: "@/images/product-image-main-2.avif"
-  imgAlt: "Mockup boxes of assorted screw set"
+  imgCard: "/src/assets/contenido/toldo-vertical-1.jpg"
+  imgMain: "/src/assets/contenido/toldo.png"
+  imgAlt: "Toldo"
 tabs:
   - id: "tabs-with-card-item-1"
     dataTab: "#tabs-with-card-1"
-    title: "Description"
+    title: "Descripción"
   - id: "tabs-with-card-item-2"
     dataTab: "#tabs-with-card-2"
-    title: "Specifications"
+    title: "Especificaciones"
   - id: "tabs-with-card-item-3"
     dataTab: "#tabs-with-card-3"
     title: "Blueprints"
 longDescription:
-  title: "Versatile Screw Fastening Solutions"
+  title: "Toldos"
   subTitle: |
-    The SF-AB A765 Assorted Screw Set offers unmatched versatility and convenience, making it the perfect choice for DIY enthusiasts and professionals alike. With a comprehensive selection of screws, you'll always have the right fastener for the job.
-  btnTitle: "Contact sales to learn more"
+    Nuestros toldos están diseñados para ofrecer sombra efectiva, proteger contra los rayos UV y aportar una elegante decoración a terrazas, pérgolas y ventanas. Disponibles en lonas españolas y francesas, garantizan durabilidad y estilo, con una garantía de 5 años.
+  btnTitle: "Solicitar"
   btnURL: "#"
 descriptionList:
-  - title: "Wide Variety"
-    subTitle: "Includes a diverse range of screw types and sizes to accommodate various applications and materials."
-  - title: "Ease of Use"
-    subTitle: "Each screw is designed for effortless installation, ensuring hassle-free fastening every time."
-  - title: "Convenience"
-    subTitle: "Eliminates the need for multiple trips to the hardware store, saving time and effort on your projects."
+  - title: "Sombra y alivio del calor"
+    subTitle: "Nuestros toldos están diseñados para proporcionar sombra efectiva y reducir el calor en el área de cobertura."
+  - title: "Protección UV"
+    subTitle: "Ofrecen protección contra los rayos UV, asegurando una cobertura completa y segura."
+  - title: "Decoración elegante"
+    subTitle: "Además de su funcionalidad, los toldos añaden un toque decorativo a terrazas, pérgolas y ventanas, con opciones tanto horizontales como verticales."
 specificationsLeft:
-  - title: "Material"
-    subTitle: "Constructed from high-quality materials such as stainless steel, ensuring durability and corrosion resistance."
-  - title: "Assortment"
-    subTitle: "Contains a generous assortment of screws, including wood screws, machine screws, and sheet metal screws."
-  - title: "Quantity"
-    subTitle: "Each set includes a sufficient quantity of screws to handle a wide range of projects and tasks."
-  - title: "Sizes"
-    subTitle: "Available in various sizes to suit different project requirements, ensuring compatibility and versatility."
+  - title: "Materiales de alta calidad"
+    subTitle: "Utilizamos lonas españolas y francesas para garantizar durabilidad y variedad según sus preferencias."
+  - title: "Garantía: 5 años"
+    subTitle: "Incluyen una garantía de 5 años, asegurando la calidad y longevidad del producto."
+  - title: "Versatilidad en instalación"
+    subTitle: "Los toldos se adaptan a diferentes configuraciones, ya sean horizontales o verticales, para cubrir una variedad de espacios y necesidades."
+  - title: "Fácil mantenimiento"
+    subTitle: "Las lonas son resistentes y de fácil limpieza, asegurando que su toldo se mantenga en óptimas condiciones con poco esfuerzo."
 tableData:
   - feature: ["Specification", "Value"]
     description:
       - ["Length (mm)", "Various"]
       - ["Weight (g)", "N/A"]
       - ["Material", "Stainless Steel"]
-      - ["Finish", "Assorted"]
+      - ["Finish", "Assorted"] 
       - ["Package Contents", "Various screws in a set"]
 blueprints:
   first: "@/images/blueprint-1.avif"
   second: "@/images/blueprint-2.avif"
-slug: a765  
+slug: toldos
 ---
