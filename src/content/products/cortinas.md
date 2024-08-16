@@ -21,7 +21,7 @@ longDescription:
   title: "Strength Meets Precision"
   subTitle: |
     The SF-BN B203 Tap Bolts and Nuts Set offers robust durability and precision for construction professionals, ensuring reliable performance in every application, from house framing to machinery assembly.
-  btnTitle: "Contact sales to learn more"
+  btnTitle: "Cotizar"
   btnURL: "#"
 descriptionList:
   - title: "Corrosion Resistance"
