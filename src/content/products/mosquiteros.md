@@ -5,7 +5,7 @@ main:
   id: 5
   content: |
   imgCard: "/src/assets/contenido/mosquitero-1.jpg"
-  imgMain: "/src/assets/contenido/persiana.png"
+  imgMain: "/src/assets/contenido/mosquitero-1.jpg"
   imgAlt: "mosquitero"
 tabs:
   - id: "tabs-with-card-item-1"

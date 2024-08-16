@@ -3,13 +3,13 @@ import ThemeIcon from "@components/ThemeIcon.astro";
 import NavLink from "@components/ui/links/NavLink.astro";
 import Authentication from "../misc/Authentication.astro";
 import enStrings from "@utils/navigation.ts";
-import frStrings from "@utils/fr/navigation.ts";
+//import frStrings from "@utils/fr/navigation.ts";
 import BrandLogo from "@components/BrandLogo.astro";
 import LanguagePicker from "@components/ui/LanguagePicker.astro";
 
 // Select the correct translation based on the page's lang prop:
-const strings = Astro.currentLocale === "fr" ? frStrings : enStrings;
-const homeUrl = Astro.currentLocale === "fr" ? "/fr" : "/";
+const strings = Astro.currentLocale === "en" ? enStrings : enStrings;
+const homeUrl = Astro.currentLocale === "en" ? "/" : "/";
 ---
 
 <!-- Main header component -->
@@ -24,12 +24,13 @@ const homeUrl = Astro.currentLocale === "fr" ? "/fr" : "/";
     <div class="relative flex items-center justify-between">
       <!-- Brand logo -->
       <a
-        class="absolute top-[-55px] left-0 flex-none rounded-lg text-xl font-bold outline-none ring-zinc-500 focus-visible:ring dark:ring-zinc-200 dark:focus:outline-none"
-        href={homeUrl}
-        aria-label="Brand"
-      >
-        <BrandLogo class="h-auto w-36 md:w-48 lg:w-64" />
-      </a>
+  class="absolute top-0 left-0 sm:top-[-55px] flex-none rounded-lg text-xl font-bold outline-none ring-zinc-500 focus-visible:ring dark:ring-zinc-200 dark:focus:outline-none transform translate-y-[-20%] sm:translate-y-0"
+  href={homeUrl}
+  aria-label="Logo"
+>
+  <BrandLogo class="h-auto w-32 sm:w-36 md:w-48 lg:w-64" />
+</a>
+
       <!-- Collapse toggle for smaller screens -->
       <div class="ml-auto mr-5 md:hidden">
         <button

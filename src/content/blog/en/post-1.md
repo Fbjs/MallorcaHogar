@@ -2,10 +2,10 @@
 title: "Maximizing Efficiency with ScrewFast's Cutting-Edge Tools"
 description: "Innovating Construction Efficiency with Precision Tools & Support"
 author: "Jacob"
-authorImage: "@/images/blog/jacob.avif"
+authorImage: "/src/assets/contenido/slide-11-crop-u3839.jpg"
 authorImageAlt: "Avatar Description"
 pubDate: 2024-02-06
-cardImage: "@/images/blog/post-1.avif"
+cardImage: "/src/assets/contenido/slide-11-crop-u3839.jpg"
 cardImageAlt: "Top view mechanical tools arrangement"
 readTime: 4
 tags: ["tools", "construction", "workflow" ]

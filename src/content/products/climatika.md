@@ -1,11 +1,11 @@
 ---
-title: "Múlitles beneficios en nuestras persianas"
+title: "Climatika"
 description: "Climátika"
 main:
   id: 7
   content: |
   imgCard: "/src/assets/contenido/climatika-1.jpeg"
-  imgMain: "/src/assets/contenido/persiana.png"
+  imgMain: "/src/assets/contenido/climatika-1.jpeg"
   imgAlt: "mosquitero"
 tabs:
   - id: "tabs-with-card-item-1"

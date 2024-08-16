@@ -1,7 +1,7 @@
 ---
 title: "The Impact of Sustainable Practices"
 description: "Discover how ScrewFast is leading the charge in promoting sustainability within the construction industry"
-cardImage: "@/images/insights/insight-3.avif"
+cardImage: "/src/assets/contenido/slide-11-crop-u3839.jpg"
 cardImageAlt: "Top view mechanical tools arrangement"
 ---
 
