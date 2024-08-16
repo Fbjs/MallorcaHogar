@@ -31,6 +31,5 @@ export default defineConfig({
   experimental: {
     clientPrerender: true,
     directRenderScript: true,
-  },
-  adapter: netlify(),  // Usa el adaptador de Netlify
+  }
 });
