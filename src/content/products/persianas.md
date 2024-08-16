@@ -1,5 +1,5 @@
 ---
-title: "Múlitles beneficios en nuestras persianas"
+title: "Múltiples beneficios en nuestras persianas"
 description: "Persianas"
 main:
   id: 1

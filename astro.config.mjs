@@ -8,10 +8,7 @@ import netlify from "@astrojs/netlify";  // Importa el adaptador de Netlify
 // https://astro.build/config
 export default defineConfig({
   // https://docs.astro.build/en/guides/images/#authorizing-remote-images
-  site: "https://screwfast.uk",
-  image: {
-    domains: ["images.unsplash.com"],
-  },
+  site: "https://mallorcahogar.neighbour.cl",
   // i18n: {
   //   defaultLocale: "en",
   //   locales: ["en", "fr"],
@@ -25,17 +22,8 @@ export default defineConfig({
   prefetch: true,
   integrations: [
     tailwind(),
-    sitemap({
-      i18n: {
-        defaultLocale: "en", // All urls that don't contain `fr` after `https://screwfast.uk/` will be treated as default locale, i.e. `en`
-        locales: {
-          en: "en", // The `defaultLocale` value must present in `locales` keys
-          fr: "fr",
-        },
-      },
-    }),
     starlight({
-      title: "ScrewFast Docs",
+      title: "Mallorca Docs",
       defaultLocale: "root",
       // https://github.com/withastro/starlight/blob/main/packages/starlight/CHANGELOG.md
       // If no Astro and Starlight i18n configurations are provided, the built-in default locale is used in Starlight and a matching Astro i18n configuration is generated/used.
@@ -84,9 +72,6 @@ export default defineConfig({
           autogenerate: { directory: "advanced" },
         },
       ],
-      social: {
-        github: "https://github.com/mearashadowfax/ScrewFast",
-      },
       disable404Route: true,
       customCss: ["./src/assets/styles/starlight.css"],
       favicon: "/favicon.ico",
@@ -101,14 +86,14 @@ export default defineConfig({
           tag: "meta",
           attrs: {
             property: "og:image",
-            content: "https://screwfast.uk" + "/social.webp",
+            content: "" + "/social.webp",
           },
         },
         {
           tag: "meta",
           attrs: {
             property: "twitter:image",
-            content: "https://screwfast.uk" + "/social.webp",
+            content: "" + "/social.webp",
           },
         },
       ],

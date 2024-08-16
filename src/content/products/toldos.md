@@ -5,7 +5,7 @@ main:
   id: 2
   content: |
   imgCard: "/src/assets/contenido/toldo-vertical-1.jpg"
-  imgMain: "/src/assets/contenido/toldo.png"
+  imgMain: "/src/assets/contenido/toldo-vertical-1.jpg"
   imgAlt: "Toldo"
 tabs:
   - id: "tabs-with-card-item-1"
@@ -39,14 +39,14 @@ specificationsLeft:
     subTitle: "Los toldos se adaptan a diferentes configuraciones, ya sean horizontales o verticales, para cubrir una variedad de espacios y necesidades."
   - title: "Fácil mantenimiento"
     subTitle: "Las lonas son resistentes y de fácil limpieza, asegurando que su toldo se mantenga en óptimas condiciones con poco esfuerzo."
-tableData:
-  - feature: ["Specification", "Value"]
-    description:
-      - ["Length (mm)", "Various"]
-      - ["Weight (g)", "N/A"]
-      - ["Material", "Stainless Steel"]
-      - ["Finish", "Assorted"] 
-      - ["Package Contents", "Various screws in a set"]
+#tableData:
+#  - feature: ["Specification", "Value"]
+#    description:
+#      - ["Length (mm)", "Various"]
+#      - ["Weight (g)", "N/A"]
+#      - ["Material", "Stainless Steel"]
+#      - ["Finish", "Assorted"] 
+#      - ["Package Contents", "Various screws in a set"]
 blueprints:
   first: "@/images/blueprint-1.avif"
   second: "@/images/blueprint-2.avif"

@@ -1,13 +1,12 @@
 ---
-title: "Cortinas metálicas - Seguridad"
+title: "Cortinas metálicas"
 description: "Cortinas de seguridad"
 main:
   id: 3
   content: |
-    Meet the SF-BN B203 – your reliable companion for professional-grade fastening. This comprehensive box set comes with a versatile selection of tap bolts and nuts, meticulously crafted to provide the strongest hold for your construction and assembly projects.
   imgCard: "/src/assets/contenido/cortina-1.jpg"
-  imgMain: "@/images/product-image-main-3.avif"
-  imgAlt: "Mockup boxes of a tap bolts and nuts set"
+  imgMain: "/src/assets/contenido/cortina-1.jpg"
+  imgAlt: "Cortina de seguridad"
 tabs:
   - id: "tabs-with-card-item-1"
     dataTab: "#tabs-with-card-1"
