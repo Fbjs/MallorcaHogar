@@ -76,17 +76,17 @@ const formSubTitle: string = "Te responderemos en 1-2 días hábiles.";
 
       <!--ContactIconBlocks are used to display different methods of contacting, including visiting office, email, browsing knowledgebase, and FAQ.-->
       <div class="divide-y divide-neutral-300 dark:divide-neutral-700">
-        <!--ContactIconBlock
-          heading="Knowledgebase"
-          content="Browse through all of our knowledgebase articles."
-          isLinkVisible={true}
-          linkTitle="Visit guides & tutorials"
-          linkURL="#"
-          isArrowVisible={true}
-          ><Icon name="question" />
-        </ContactIconBlock-->
-
         <ContactIconBlock
+          heading="WhatsApp"
+          content="Envíanos un mensaje!"
+          isLinkVisible={true}
+          linkTitle="+56 9 7645 4938"
+          linkURL="https://api.whatsapp.com/send?phone=56976454938&text=Hola,%20quiero%20contactarme%20con%20usted"
+          isArrowVisible={true}
+          ><Icon name="chatBubble" />
+        </ContactIconBlock>
+
+        <!--ContactIconBlock
           heading="FAQ"
           content="Explora nuestras preguntas frecuentes para obtener respuestas rápidas y claras a tus dudas más comunes."
           isLinkVisible={true}
@@ -94,25 +94,37 @@ const formSubTitle: string = "Te responderemos en 1-2 días hábiles.";
           linkURL="#"
           isArrowVisible={true}
           ><Icon name="chatBubble" />
-        </ContactIconBlock>
-
-        <!--ContactIconBlock
-          heading="Visit our office"
-          content="UK ScrewFast"
-          isAddressVisible={true}
-          addressContent="72 Union Terrace, E10 4PE London"
-          ><Icon name="mapPin" />
         </ContactIconBlock-->
 
         <ContactIconBlock
-          heading="Contacto directo"
-          content="¿Prefieres comunicarte por escrito? Envíanos un correo electrónico a"
+          heading="Visítanos"
+          content="Dirección"
+          isAddressVisible={true}
+          addressContent="Eulogia Sánchez 065, Providencia, Región Metropolitana"
+          ><Icon name="mapPin" />
+        </ContactIconBlock>
+
+        <ContactIconBlock
+          heading="Correo electrónico"
+          content="Envíanos un correo electrónico a"
           isLinkVisible={true}
           linkTitle="contacto@mallorcahogar.cl"
-          linkURL="#"
+          linkURL="mailto:contacto@mallorcahogar.cl"
           ><Icon name="envelopeOpen" />
         </ContactIconBlock>
-      </div>
+      </div>     
     </div>
+    <div class="flex justify-center">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.3614626293934!2d-70.6333047!3d-33.4398881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5902525791d%3A0xa04b4de2425f2038!2sEulogia%20S%C3%A1nchez%20065%2C%207500895%20Providencia%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1sen!2scl!4v1724104246640!5m2!1sen!2scl"
+    width="800"
+    height="600"
+    style="border:0;"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"
+    class="w-full max-w-6xl h-[600px] border-0"
+  ></iframe>
+</div>
   </div>
 </section>

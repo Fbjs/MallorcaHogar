@@ -1,6 +1,6 @@
 ---
 title: "Climatika"
-description: "Climátika"
+description: "Climatika"
 main:
   id: 7
   content: |

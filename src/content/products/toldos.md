@@ -16,7 +16,7 @@ tabs:
     title: "Especificaciones"
   - id: "tabs-with-card-item-3"
     dataTab: "#tabs-with-card-3"
-    title: "Blueprints"
+    title: "Modelos"
 longDescription:
   title: "Toldos"
   subTitle: |
