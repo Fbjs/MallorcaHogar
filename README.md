@@ -447,7 +447,7 @@ To customize SEO settings, modify the values in the `constants.ts` file. Key con
 // constants.ts
 
 export const SITE = {
-  title: "ScrewFast",
+  title: "Mallorca Hogar",
   // Other SITE properties...
 };
 
@@ -457,7 +457,7 @@ export const SEO = {
 };
 
 export const OG = {
-  title: `${SITE.title}: Hardware Tools & Construction Services`,
+  title: `Mallorca Hogar`,
   // Other OG properties...
 };
 ```

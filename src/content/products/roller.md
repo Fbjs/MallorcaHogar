@@ -16,7 +16,7 @@ tabs:
     title: "Especificaciones"
   - id: "tabs-with-card-item-3"
     dataTab: "#tabs-with-card-3"
-    title: "Modelos Disponibles"
+    title: "Modelos"
 longDescription:
   title: "Elegancia y Versatilidad"
   subTitle: |

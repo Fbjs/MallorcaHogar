@@ -1,7 +1,7 @@
 ---
 title: "The Importance of Collaboration"
 description: "Explore how collaboration is central to ScrewFast's construction approach, driving effective communication and teamwork to achieve outstanding outcomes."
-cardImage: "/src/assets/contenido/slide-11-crop-u3839.jpg"
+cardImage: "/src/assets/slide-11-crop-u3839.jpg"
 cardImageAlt: "Top view mechanical tools arrangement"
 ---
 
