@@ -4,8 +4,8 @@ description: "Climatika"
 main:
   id: 7
   content: |
-  imgCard: "/src/assets/contenido/climatika-1.jpeg"
-  imgMain: "/src/assets/contenido/climatika-1.jpeg"
+  imgCard: "/src/assets/climatika-1.jpeg"
+  imgMain: "/src/assets/climatika-1.jpeg"
   imgAlt: "mosquitero"
 tabs:
   - id: "tabs-with-card-item-1"

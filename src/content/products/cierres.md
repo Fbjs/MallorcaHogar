@@ -4,8 +4,8 @@ description: "Cierres de Cristal"
 main:
   id: 6
   content: |
-  imgCard: "/src/assets/contenido/cierre-2.jpg"
-  imgMain: "/src/assets/contenido/cierre-2.jpg"
+  imgCard: "/src/assets/cierre-2.jpg"
+  imgMain: "/src/assets/cierre-2.jpg"
   imgAlt: "mosquitero"
 tabs:
   - id: "tabs-with-card-item-1"

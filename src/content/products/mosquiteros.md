@@ -4,8 +4,8 @@ description: "Mosquiteros"
 main:
   id: 5
   content: |
-  imgCard: "/src/assets/contenido/mosquitero-1.jpg"
-  imgMain: "/src/assets/contenido/mosquitero-1.jpg"
+  imgCard: "/src/assets/mosquitero-1.jpg"
+  imgMain: "/src/assets/mosquitero-1.jpg"
   imgAlt: "mosquitero"
 tabs:
   - id: "tabs-with-card-item-1"

@@ -4,8 +4,8 @@ description: "Roller"
 main:
   id: 3
   content: |
-  imgCard: "/src/assets/contenido/roller-1.jpg"
-  imgMain: "/src/assets/contenido/roller-1.jpg"
+  imgCard: "/src/assets/roller-1.jpg"
+  imgMain: "/src/assets/roller-1.jpg"
   imgAlt: "Cortina roller elegante"
 tabs:
   - id: "tabs-with-card-item-1"

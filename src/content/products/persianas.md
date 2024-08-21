@@ -4,8 +4,8 @@ description: "Persianas"
 main:
   id: 1
   content: |
-  imgCard: "/src/assets/contenido/persiana-1.jpg"
-  imgMain: "/src/assets/contenido/persiana-1.jpg"
+  imgCard: "/src/assets/persiana-1.jpg"
+  imgMain: "/src/assets/persiana-1.jpg"
   imgAlt: "Persiana"
 tabs:
   - id: "tabs-with-card-item-1"

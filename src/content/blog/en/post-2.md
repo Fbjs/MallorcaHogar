@@ -2,10 +2,10 @@
 title: "Enhancing Safety and Workmanship with ScrewFast Construction Services"
 description: "Quality construction services for lasting results"
 author: "Brad"
-authorImage: "/src/assets/contenido/slide-11-crop-u3839.jpg"
+authorImage: "/src/assets/slide-11-crop-u3839.jpg"
 authorImageAlt: "Avatar Description"
 pubDate: 2024-02-10
-cardImage: "/src/assets/contenido/slide-11-crop-u3839.jpg"
+cardImage: "/src/assets/slide-11-crop-u3839.jpg"
 cardImageAlt: "Man in black sweatpants using DEWALT circular saw and cutting a wood plank"
 readTime: 5
 tags: ["safety", "craftsmanship", "management" ]

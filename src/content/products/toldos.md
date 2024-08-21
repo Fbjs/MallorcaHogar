@@ -4,8 +4,8 @@ description: "Toldos"
 main:
   id: 2
   content: |
-  imgCard: "/src/assets/contenido/toldo-vertical-1.jpg"
-  imgMain: "/src/assets/contenido/toldo-vertical-1.jpg"
+  imgCard: "/src/assets/toldo-vertical-1.jpg"
+  imgMain: "/src/assets/toldo-vertical-1.jpg"
   imgAlt: "Toldo"
 tabs:
   - id: "tabs-with-card-item-1"

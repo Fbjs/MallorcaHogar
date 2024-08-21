@@ -4,8 +4,8 @@ description: "Cortinas de seguridad"
 main:
   id: 3
   content: |
-  imgCard: "/src/assets/contenido/cortina-1.jpg"
-  imgMain: "/src/assets/contenido/cortina-1.jpg"
+  imgCard: "/src/assets/cortina-1.jpg"
+  imgMain: "/src/assets/cortina-1.jpg"
   imgAlt: "Cortina de seguridad"
 tabs:
   - id: "tabs-with-card-item-1"

@@ -61,7 +61,7 @@ const pageTitle: string = `${product.data.title} | ${SITE.title}`;
           src={product.data.main.imgMain}
           class="w-[900px] h-[600px] rounded-[12px]"
           alt={product.data.main.imgAlt}
-          format={"avif"}
+          format={"jpg"}
           loading={"eager"}
         />
       </div>
@@ -330,7 +330,7 @@ const pageTitle: string = `${product.data.title} | ${SITE.title}`;
             });
       
             if (texts) {
-              texts.innerHTML = `<p class="text-lg text-gray-800">${textsArray[index]}</p>`;
+              texts.innerHTML = `<p class="text-lg text-gray-800 dark:text-white">${textsArray[index]}</p>`;
             }
       
             indicators.forEach((indicator, i) => {
