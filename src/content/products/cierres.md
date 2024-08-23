@@ -1,5 +1,5 @@
 ---
-title: "Múlitles beneficios en nuestras persianas"
+title: "Cierres de Cristal"
 description: "Cierres de Cristal"
 main:
   id: 6
@@ -18,36 +18,36 @@ tabs:
     dataTab: "#tabs-with-card-3"
     title: "Modelos"
 longDescription:
-  title: "Persiana Española"
+  title: "Cierre de Cristal"
   subTitle: |
-    Las persianas españolas combinan diseño elegante y funcionalidad, mejorando la seguridad y eficiencia energética de su hogar mientras añaden un toque decorativo a cualquier fachada.
+    Nuestro cierre de cristal es una solución para cierre de terrazas, quinchos y otros espacios que lo requieran.
   btnTitle: "Solicitar"
   btnURL: "#"
 descriptionList:
-  - title: "Alta Seguridad y Durabilidad"
-    subTitle: "Fabricadas con perfiles, cajones y lamas de aluminio, estas persianas proporcionan robustez y seguridad adicional gracias a las lamas con poliuretano expandido."
-  - title: "Eficiencia Energética y Confort"
-    subTitle: "El diseño con poliuretano expandido asegura un excelente aislamiento térmico y acústico, mejorando el confort interior y contribuyendo al ahorro energético."
-  - title: "Versatilidad y Estilo"
-    subTitle: "Permiten controlar la luz solar, ventilación y cierre hermético, y están disponibles en una amplia variedad de colores para decorar fachadas."
+  - title: "Calidad y Tecnología"
+    subTitle: "Producto de fabricación española con un alto estándar de calidad y tecnología."
+  - title: "Materiales de Alta Calidad"
+    subTitle: "Se compone de perfilería de aluminio y vidrio templado de 10 mm, ofreciendo mayor seguridad que un vidrio simple."
+  - title: "Aislamiento y Seguridad"
+    subTitle: "Proporciona aislación térmica y acústica, y es altamente seguro gracias al vidrio templado."
 specificationsLeft:
-  - title: "Material"
-    subTitle: "Perfiles, cajones y lamas de aluminio."
-  - title: "Lamas"
-    subTitle: "Tamaños de 45 mm y 55 mm, con poliuretano expandido."
-  - title: "Aumento en seguridad"
-    subTitle: "Las persianas españolas, con perfiles y lamas de aluminio y poliuretano expandido, ofrecen una barrera robusta contra intrusiones."
-  - title: "Aislamiento térmico y acústico"
-    subTitle: "Proporcionan un excelente aislamiento, manteniendo su hogar confortable y silencioso."
+  - title: "Facilidad de Uso"
+    subTitle: "Facilidad en su apertura y cierre, adaptándose a las necesidades del espacio."
+  - title: "Limpieza Sencilla"
+    subTitle: "Diseñado para una limpieza fácil y rápida, manteniendo su aspecto impecable."
+  - title: "Integración con Otros Productos"
+    subTitle: "Compatible con Toldos y Roller, productos que nuestra empresa también ofrece."
+  - title: "Aislamiento Térmico y Acústico"
+    subTitle: "Ofrece un excelente aislamiento, manteniendo el espacio confortable y silencioso."
 specificationsRight:
-  - title: "Control de luz solar"
-    subTitle: "Permiten ajustar la cantidad de luz que entra, protegiendo muebles y suelos de la exposición solar."
-  - title: "Ventilación y cierre hermético a voluntad"
-    subTitle: "Facilitan el flujo de aire fresco o un cierre hermético, protegiendo contra polvo, lluvia e insectos."
-  - title: "Ahorro en energía"
-    subTitle: "Su capacidad de aislamiento térmico reduce el uso de calefacción y aire acondicionado, disminuyendo el consumo energético."
+  - title: "Perfilería de Aluminio"
+    subTitle: "Fabricado con perfilería de aluminio de alta calidad, resistente y duradero."
+  - title: "Vidrio Templado de 10 mm"
+    subTitle: "Vidrio templado que proporciona mayor seguridad y durabilidad que el vidrio simple."
+  - title: "Adaptabilidad a Espacios"
+    subTitle: "Ideal para terrazas, quinchos y otros espacios que requieran un cierre elegante y funcional."
   - title: "Garantía: 5 años"
-    subTitle: "Ofrecen una garantía de 5 años, asegurando durabilidad y calidad."
+    subTitle: "Ofrece una garantía de 5 años, asegurando durabilidad y calidad."
 blueprints:
   first: "@/images/blueprint-1.avif"
   second: "@/images/blueprint-2.avif"

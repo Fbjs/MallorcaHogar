@@ -1,5 +1,5 @@
 ---
-title: "Múlitles beneficios en nuestras persianas"
+title: "Mosquiteros"
 description: "Mosquiteros"
 main:
   id: 5
@@ -18,34 +18,35 @@ tabs:
     dataTab: "#tabs-with-card-3"
     title: "Modelos"
 longDescription:
-  title: "Persiana Española"
+  title: "Mosquiteros"
   subTitle: |
-    Las persianas españolas combinan diseño elegante y funcionalidad, mejorando la seguridad y eficiencia energética de su hogar mientras añaden un toque decorativo a cualquier fachada.
+    Nuestra empresa cuenta con varios tipos de mosquiteros como solución para evitar el ingreso de insectos a su casa o cualquier tipo de inmueble.
+    Se pueden instalar en cualquier tipo de ventana, ventanal o puertas y así podrá ventilar sin la molestia de mosquitos, zancudos u otros.
   btnTitle: "Solicitar"
   btnURL: "#"
 descriptionList:
-  - title: "Alta Seguridad y Durabilidad"
-    subTitle: "Fabricadas con perfiles, cajones y lamas de aluminio, estas persianas proporcionan robustez y seguridad adicional gracias a las lamas con poliuretano expandido."
-  - title: "Eficiencia Energética y Confort"
-    subTitle: "El diseño con poliuretano expandido asegura un excelente aislamiento térmico y acústico, mejorando el confort interior y contribuyendo al ahorro energético."
-  - title: "Versatilidad y Estilo"
-    subTitle: "Permiten controlar la luz solar, ventilación y cierre hermético, y están disponibles en una amplia variedad de colores para decorar fachadas."
+  - title: "Tipos de Mosquiteros"
+    subTitle: "Ofrecemos mosquiteros con marcos de aluminio en opciones fijos, correderas y enrollables (sistema de muelle compensatorio)."
+  - title: "Instalación Versátil"
+    subTitle: "Se pueden instalar en cualquier tipo de ventana, ventanal o puerta."
+  - title: "Variedad de Colores"
+    subTitle: "Puede elegir el color que compatibilice con sus ventanas o cualquier color dentro de las varias opciones que tenemos."
 specificationsLeft:
   - title: "Material"
-    subTitle: "Perfiles, cajones y lamas de aluminio."
-  - title: "Lamas"
-    subTitle: "Tamaños de 45 mm y 55 mm, con poliuretano expandido."
-  - title: "Aumento en seguridad"
-    subTitle: "Las persianas españolas, con perfiles y lamas de aluminio y poliuretano expandido, ofrecen una barrera robusta contra intrusiones."
-  - title: "Aislamiento térmico y acústico"
-    subTitle: "Proporcionan un excelente aislamiento, manteniendo su hogar confortable y silencioso."
+    subTitle: "Marcos de aluminio disponibles en varias opciones de color."
+  - title: "Tipos de Mosquiteros"
+    subTitle: "Fijos, correderas, enrollables (sistema de muelle compensatorio)."
+  - title: "Protección contra Insectos"
+    subTitle: "Evitan el ingreso de insectos a su casa o cualquier tipo de inmueble."
+  - title: "Ventilación Sin Molestias"
+    subTitle: "Permiten ventilar sin la molestia de mosquitos, zancudos u otros."
 specificationsRight:
-  - title: "Control de luz solar"
-    subTitle: "Permiten ajustar la cantidad de luz que entra, protegiendo muebles y suelos de la exposición solar."
-  - title: "Ventilación y cierre hermético a voluntad"
-    subTitle: "Facilitan el flujo de aire fresco o un cierre hermético, protegiendo contra polvo, lluvia e insectos."
-  - title: "Ahorro en energía"
-    subTitle: "Su capacidad de aislamiento térmico reduce el uso de calefacción y aire acondicionado, disminuyendo el consumo energético."
+  - title: "Opciones de Instalación"
+    subTitle: "Adaptables a cualquier tipo de ventana, ventanal o puerta."
+  - title: "Sistema Enrollable"
+    subTitle: "Mosquiteros con sistema de muelle compensatorio para una mayor comodidad."
+  - title: "Personalización"
+    subTitle: "Elija el color que mejor se adapte a su espacio."
   - title: "Garantía: 5 años"
     subTitle: "Ofrecen una garantía de 5 años, asegurando durabilidad y calidad."
 blueprints:

@@ -75,7 +75,7 @@ const pageTitle: string = `${product.data.title} | ${SITE.title}`;
       role="tablist"
     >
       {
-        product.data.tabs.map((tab, index) => (
+        product.data.tabs.map((tab: { title: string; id: string; dataTab: string; }, index: number) => (
           <ProductTabBtn
             title={tab.title}
             id={tab.id}
@@ -111,7 +111,7 @@ const pageTitle: string = `${product.data.title} | ${SITE.title}`;
 
             <div class="space-y-6 lg:space-y-10">
               {
-                product.data.descriptionList.map((list) => (
+                product.data.descriptionList.map((list: { title: unknown; subTitle: unknown; }) => (
                   <div class="flex">
                     <div>
                       <h3 class="text-base font-bold text-neutral-800 dark:text-neutral-200 sm:text-lg">
@@ -134,7 +134,7 @@ const pageTitle: string = `${product.data.title} | ${SITE.title}`;
           <div class="grid w-full grid-cols-1 gap-x-16 md:grid-cols-2">
             <div class="max-w-md space-y-6">
               {
-                product.data.specificationsLeft.map((spec) => (
+                product.data.specificationsLeft.map((spec: { title: unknown; subTitle: unknown; }) => (
                   <div>
                     <h3 class="block font-bold text-neutral-800 dark:text-neutral-200">
                       {spec.title}
@@ -149,7 +149,7 @@ const pageTitle: string = `${product.data.title} | ${SITE.title}`;
             {
               product.data.specificationsRight ? (
                 <div class="mt-6 max-w-md space-y-6 md:ml-auto md:mt-0">
-                  {product.data.specificationsRight?.map((spec) => (
+                  {product.data.specificationsRight?.map((spec: { title: unknown; subTitle: unknown; }) => (
                     <div>
                       <h3 class="block font-bold text-neutral-800 dark:text-neutral-200">
                         {spec.title}
@@ -170,7 +170,7 @@ const pageTitle: string = `${product.data.title} | ${SITE.title}`;
                             <thead>
                               <tr>
                                 {product.data.tableData?.[0].feature?.map(
-                                  (header) => (
+                                  (header: unknown) => (
                                     <th
                                       scope="col"
                                       class="px-6 py-3 text-start text-xs font-medium uppercase text-neutral-500 dark:text-neutral-500"
@@ -182,12 +182,12 @@ const pageTitle: string = `${product.data.title} | ${SITE.title}`;
                               </tr>
                             </thead>
                             <tbody class="divide-y divide-neutral-300 dark:divide-neutral-700">
-                              {product.data.tableData?.map((row) =>
+                              {product.data.tableData?.map((row: { description: any[]; }) =>
                                 // Wrap each row's content in a separate <tr> element
                                 row.description.map((rowData) => (
                                   <tr>
                                     {/* Iterate through each cell value in the row's description array */}
-                                    {rowData.map((cellValue) => (
+                                    {rowData.map((cellValue: unknown) => (
                                       // Render each cell value in its own <td> element
                                       <td class="whitespace-nowrap px-6 py-4 text-sm font-medium text-neutral-600 dark:text-neutral-400">
                                         {cellValue}
@@ -320,22 +320,15 @@ const pageTitle: string = `${product.data.title} | ${SITE.title}`;
             <button type="button" class="w-4 h-4 rounded-full bg-white/60 hover:bg-white transition-shadow duration-300 shadow-md" aria-label="Slide 4" data-carousel-slide-to="3"></button>
             <button type="button" class="w-4 h-4 rounded-full bg-white/60 hover:bg-white transition-shadow duration-300 shadow-md" aria-label="Slide 5" data-carousel-slide-to="4"></button>
             <button type="button" class="w-4 h-4 rounded-full bg-white/60 hover:bg-white transition-shadow duration-300 shadow-md" aria-label="Slide 6" data-carousel-slide-to="5"></button>
-            <button type="button" class="w-4 h-4 rounded-full bg-white/60 hover:bg-white transition-shadow duration-300 shadow-md" aria-label="Slide 7" data-carousel-slide-to="6"></button>
-            <button type="button" class="w-4 h-4 rounded-full bg-white/60 hover:bg-white transition-shadow duration-300 shadow-md" aria-label="Slide 8" data-carousel-slide-to="7"></button>
-            <button type="button" class="w-4 h-4 rounded-full bg-white/60 hover:bg-white transition-shadow duration-300 shadow-md" aria-label="Slide 9" data-carousel-slide-to="8"></button>
-            <button type="button" class="w-4 h-4 rounded-full bg-white/60 hover:bg-white transition-shadow duration-300 shadow-md" aria-label="Slide 10" data-carousel-slide-to="9"></button>
-            <button type="button" class="w-4 h-4 rounded-full bg-white/60 hover:bg-white transition-shadow duration-300 shadow-md" aria-label="Slide 11" data-carousel-slide-to="10"></button>
-            <button type="button" class="w-4 h-4 rounded-full bg-white/60 hover:bg-white transition-shadow duration-300 shadow-md" aria-label="Slide 12" data-carousel-slide-to="11"></button>
-            <button type="button" class="w-4 h-4 rounded-full bg-white/60 hover:bg-white transition-shadow duration-300 shadow-md" aria-label="Slide 13" data-carousel-slide-to="12"></button>
-            <button type="button" class="w-4 h-4 rounded-full bg-white/60 hover:bg-white transition-shadow duration-300 shadow-md" aria-label="Slide 14" data-carousel-slide-to="13"></button>
-            <button type="button" class="w-4 h-4 rounded-full bg-white/60 hover:bg-white transition-shadow duration-300 shadow-md" aria-label="Slide 15" data-carousel-slide-to="14"></button>
-            <button type="button" class="w-4 h-4 rounded-full bg-white/60 hover:bg-white transition-shadow duration-300 shadow-md" aria-label="Slide 16" data-carousel-slide-to="15"></button>
-            <button type="button" class="w-4 h-4 rounded-full bg-white/60 hover:bg-white transition-shadow duration-300 shadow-md" aria-label="Slide 17" data-carousel-slide-to="16"></button>
-            <button type="button" class="w-4 h-4 rounded-full bg-white/60 hover:bg-white transition-shadow duration-300 shadow-md" aria-label="Slide 18" data-carousel-slide-to="17"></button>
-            <button type="button" class="w-4 h-4 rounded-full bg-white/60 hover:bg-white transition-shadow duration-300 shadow-md" aria-label="Slide 19" data-carousel-slide-to="18"></button>
           </div>
         </div>
+      
+        <!-- Contenedor para el texto -->
+        <div id="carousel-text" class="mt-4 text-center">
+          <p class="text-lg text-gray-800 dark:text-white"></p>
+        </div>
       </div>
+      
       <script>
         document.addEventListener('DOMContentLoaded', function () {
           const carousel = document.getElementById('default-carousel');
@@ -350,24 +343,37 @@ const pageTitle: string = `${product.data.title} | ${SITE.title}`;
           let currentIndex = 0;
       
           const textsArray = [
-            'Texto asociado a la primera imagen',
-            'Texto asociado a la segunda imagen',
-            'Texto asociado a la tercera imagen',
-            'Texto asociado a la cuarta imagen',
-            'Texto asociado a la quinta imagen',
-            'Texto asociado a la sexta imagen',
-            'Texto asociado a la séptima imagen',
-            'Texto asociado a la octava imagen'
+            {
+              title: 'Producto 1',
+              description: 'Características del producto 1.',
+            },
+            {
+              title: 'Producto 2',
+              description: 'Características del producto 2.',
+            },
+            {
+              title: 'Producto 3',
+              description: 'Características del producto 3.',
+            },
+            {
+              title: 'Producto 4',
+              description: 'Características del producto 4.',
+            },
           ];
       
           function showItem(index: number) {
             items.forEach((item, i) => {
-              item.style.opacity = i === index ? '1' : '0';
-              item.style.zIndex = i === index ? '1' : '0';
+              const element = item as HTMLElement;
+              element.style.opacity = i === index ? '1' : '0';
+              element.style.zIndex = i === index ? '1' : '0';
             });
       
             if (texts) {
-              texts.innerHTML = `<p class="text-lg text-gray-800 dark:text-white">${textsArray[index]}</p>`;
+              const { title, description } = textsArray[index];
+              texts.innerHTML = `
+                <h2 class="text-2xl font-bold text-gray-800 dark:text-white mb-2">${title}</h2>
+                <p class="text-lg text-gray-800 dark:text-white">${description}</p>
+              `;
             }
       
             indicators.forEach((indicator, i) => {
@@ -392,7 +398,7 @@ const pageTitle: string = `${product.data.title} | ${SITE.title}`;
           }
       
           // Auto-play every 5 seconds
-          const intervalId = setInterval(showNextItem, 5000);
+          const intervalId = setInterval(showNextItem, 8000);
       
           // Event listeners for indicators
           indicators.forEach((indicator, i) => {
@@ -422,6 +428,7 @@ const pageTitle: string = `${product.data.title} | ${SITE.title}`;
           showItem(currentIndex);
         });
       </script>
+      
       
       
     </div>
