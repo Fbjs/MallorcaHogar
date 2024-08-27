@@ -53,8 +53,7 @@ const productsCollection = defineCollection({
       })
     ).optional(),
     blueprints: z.object({
-      first: image().optional(),
-      second: image().optional(),
+
     }),
   }),
 });

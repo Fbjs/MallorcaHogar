@@ -48,7 +48,7 @@ specificationsLeft:
 #      - ["Finish", "Assorted"] 
 #      - ["Package Contents", "Various screws in a set"]
 blueprints:
-  first: "@/images/blueprint-1.avif"
+  first: ""
   second: "@/images/blueprint-2.avif"
 slug: toldos
 ---
