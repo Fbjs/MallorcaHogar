@@ -10,10 +10,10 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/check": "^0.8.2",
-    "@astrojs/netlify": "^5.4.0",
+    "@astrojs/check": "^0.9.3",
+    "@astrojs/netlify": "^5.5.1",
     "@astrojs/sitemap": "^3.1.6",
-    "@astrojs/starlight": "^0.25.1",
+    "@astrojs/starlight": "^0.26.1",
     "@astrojs/starlight-tailwind": "^2.0.3",
     "@astrojs/tailwind": "^5.1.0",
     "@preline/accordion": "^2.3.0",
@@ -21,7 +21,7 @@
     "@preline/dropdown": "^2.3.0",
     "@preline/overlay": "^2.3.0",
     "@preline/tabs": "^2.3.0",
-    "astro": "^4.12.2",
+    "astro": "^4.14.5",
     "astro-compressor": "^0.4.1",
     "clipboard": "^2.0.11",
     "globby": "^14.0.2",

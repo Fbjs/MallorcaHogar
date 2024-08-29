@@ -11,6 +11,8 @@ import TestimonialsSectionAlt from "@components/sections/testimonials/Testimonia
 import { getCollection } from "astro:content";
 import type { CollectionEntry } from "astro:content";
 import { SITE } from "@data/constants";
+//import { Icon } from "@astrojs/starlight/components";
+import Icon from "@components/ui/icons/Icon.astro";
 
 // Fetching all the product related content and sorting it by main.id
 const product: CollectionEntry<"products">[] = (
@@ -60,6 +62,12 @@ const subTitle: string =
 ];*/
 
 const pageTitle: string = `Productos | ${SITE.title}`;
+
+const imageClassSmall =
+  "absolute inset-0 h-full w-full object-cover object-center transition duration-[600ms] ease-[cubic-bezier(0.45,0,0.55,1)] group-hover:scale-110"
+
+  const imageClassWide =
+  "absolute inset-0 h-full w-full object-cover object-center transition duration-[600ms] ease-[cubic-bezier(0.45,0,0.55,1)] group-hover:scale-110";
 ---
 
 <MainLayout
@@ -87,7 +95,7 @@ const pageTitle: string = `Productos | ${SITE.title}`;
     </div>
     <!--Displaying products in alternating styles. Alternative product gets different card styling.-->
     <!--Maps through all product entries and displays them with either CardSmall or CardWide based on their position.-->
-    <section class="grid grid-cols-1 gap-4 sm:grid-cols-3 md:gap-6 xl:gap-8">
+    <!--section class="grid grid-cols-1 gap-4 sm:grid-cols-3 md:gap-6 xl:gap-8">
       {
         product.map((product, index) => {
           const position = index % 4;
@@ -98,7 +106,181 @@ const pageTitle: string = `Productos | ${SITE.title}`;
           }
         })
       }
+    </section-->
+
+
+    <section class="grid grid-cols-1 gap-4 sm:grid-cols-3 md:gap-6 xl:gap-8">
+      <!-- Card 1 -->
+      <a
+        href={"/products/persianas"}
+        data-astro-prefetch
+        class="group relative flex h-48 items-end overflow-hidden rounded-xl shadow-lg outline-none ring-zinc-500 focus-visible:ring dark:ring-zinc-200 dark:focus:outline-none md:h-80"
+      >
+        <img
+          src="/src/assets/persiana-1.jpg"
+          alt="Persianas"
+          draggable={"false"}
+          class={imageClassSmall}
+        />
+        <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-neutral-800 via-transparent to-transparent opacity-50">
+        </div>
+        <span
+          class="relative mb-3 ml-4 inline-block text-sm font-bold text-neutral-50 transition duration-[600ms] ease-[cubic-bezier(0.45,0,0.55,1)] group-hover:scale-110 md:ml-5 md:text-lg"
+        >
+          Persianas <Icon name="openInNew" />
+        </span>
+      </a>
+    
+      <!-- Card 2 -->
+      <a
+        href={"/products/toldos"}
+        data-astro-prefetch
+        class="group relative flex h-48 items-end overflow-hidden rounded-lg shadow-xl outline-none ring-zinc-500 focus-visible:ring dark:ring-zinc-200 dark:focus:outline-none md:col-span-2 md:h-80"
+      >
+        <img
+          src="/src/assets/toldo-vertical-1.jpg"
+          alt="Toldo"
+          draggable={"false"}
+          class={imageClassWide}
+        />
+        <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-neutral-800 via-transparent to-transparent opacity-50">
+        </div>
+        <span
+          class="relative mb-3 ml-4 inline-block text-sm font-bold text-neutral-50 transition duration-[600ms] ease-[cubic-bezier(0.45,0,0.55,1)] group-hover:scale-110 md:ml-5 md:text-lg"
+        >
+          Toldos <Icon name="openInNew" />
+        </span>
+      </a>
+    
+      <!-- Card 3 -->
+      <a
+        href={"/products/roller"}
+        data-astro-prefetch
+        class="group relative flex h-48 items-end overflow-hidden rounded-lg shadow-xl outline-none ring-zinc-500 focus-visible:ring dark:ring-zinc-200 dark:focus:outline-none md:col-span-2 md:h-80"
+      >
+        <img
+          src="/src/assets/roller-1.jpg"
+          alt="Roller"
+          draggable={"false"}
+          class={imageClassWide}
+        />
+        <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-neutral-800 via-transparent to-transparent opacity-50">
+        </div>
+        <span
+          class="relative mb-3 ml-4 inline-block text-sm font-bold text-neutral-50 transition duration-[600ms] ease-[cubic-bezier(0.45,0,0.55,1)] group-hover:scale-110 md:ml-5 md:text-lg"
+        >
+          Roller <Icon name="openInNew" />
+        </span>
+      </a>
+    
+      <!-- Card 4 -->
+      <a
+        href={"/products/cortinas"}
+        data-astro-prefetch
+        class="group relative flex h-48 items-end overflow-hidden rounded-xl shadow-lg outline-none ring-zinc-500 focus-visible:ring dark:ring-zinc-200 dark:focus:outline-none md:h-80"
+      >
+        <img
+          src="/src/assets/cortina-1.jpg"
+          alt="Cortina"
+          draggable={"false"}
+          class={imageClassSmall}
+          
+        />
+        <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-neutral-800 via-transparent to-transparent opacity-50">
+        </div>
+        <span
+          class="relative mb-3 ml-4 inline-block text-sm font-bold text-neutral-50 transition duration-[600ms] ease-[cubic-bezier(0.45,0,0.55,1)] group-hover:scale-110 md:ml-5 md:text-lg"
+        >
+          Cortinas Metálicas <Icon name="openInNew" />
+        </span>
+      </a>
+      <!-- Card 5 -->
+      <a
+        href={"/products/mosquiteros"}
+        data-astro-prefetch
+        class="group relative flex h-48 items-end overflow-hidden rounded-xl shadow-lg outline-none ring-zinc-500 focus-visible:ring dark:ring-zinc-200 dark:focus:outline-none md:h-80"
+      >
+        <img
+          src="/src/assets/mosquitero-1.jpg"
+          alt="Mosquitero"
+          draggable={"false"}
+          class={imageClassSmall}
+        />
+        <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-neutral-800 via-transparent to-transparent opacity-50">
+        </div>
+        <span
+          class="relative mb-3 ml-4 inline-block text-sm font-bold text-neutral-50 transition duration-[600ms] ease-[cubic-bezier(0.45,0,0.55,1)] group-hover:scale-110 md:ml-5 md:text-lg"
+        >
+          Mosquiteros <Icon name="openInNew" />
+        </span>
+      </a>
+
+      <!-- Card 6 -->
+      <a
+        href={"/products/cierres"}
+        data-astro-prefetch
+        class="group relative flex h-48 items-end overflow-hidden rounded-lg shadow-xl outline-none ring-zinc-500 focus-visible:ring dark:ring-zinc-200 dark:focus:outline-none md:col-span-2 md:h-80"
+      >
+        <img
+          src="/src/assets/cierre-2.jpg"
+          alt="Cierre"
+          draggable={"false"}
+          class={imageClassWide}
+        />
+        <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-neutral-800 via-transparent to-transparent opacity-50">
+        </div>
+        <span
+          class="relative mb-3 ml-4 inline-block text-sm font-bold text-neutral-50 transition duration-[600ms] ease-[cubic-bezier(0.45,0,0.55,1)] group-hover:scale-110 md:ml-5 md:text-lg"
+        >
+          Cierres de Cristal <Icon name="openInNew" />
+        </span>
+      </a>
+
+      <!-- Card 7 -->
+      <a
+        href={"/products/climatika"}
+        data-astro-prefetch
+        class="group relative flex h-48 items-end overflow-hidden rounded-xl shadow-lg outline-none ring-zinc-500 focus-visible:ring dark:ring-zinc-200 dark:focus:outline-none md:h-80"
+      >
+        <img
+          src="/src/assets/climatika-1.jpeg"
+          alt="Climatika"
+          draggable={"false"}
+          class={imageClassSmall}
+        />
+        <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-neutral-800 via-transparent to-transparent opacity-50">
+        </div>
+        <span
+          class="relative mb-3 ml-4 inline-block text-sm font-bold text-neutral-50 transition duration-[600ms] ease-[cubic-bezier(0.45,0,0.55,1)] group-hover:scale-110 md:ml-5 md:text-lg"
+        >
+          Climatika <Icon name="openInNew" />
+        </span>
+      </a>
+
+      <!-- Card 8 -->
+      <a
+        href={"/products/laminas"}
+        data-astro-prefetch
+        class="group relative flex h-48 items-end overflow-hidden rounded-lg shadow-xl outline-none ring-zinc-500 focus-visible:ring dark:ring-zinc-200 dark:focus:outline-none md:col-span-2 md:h-80"
+      >
+        <img
+          src="/src/assets/lamina-1.jpg"
+          alt="Lamina"
+          draggable={"false"}
+          class={imageClassWide}
+        />
+        <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-neutral-800 via-transparent to-transparent opacity-50">
+        </div>
+        <span
+          class="relative mb-3 ml-4 inline-block text-sm font-bold text-neutral-50 transition duration-[600ms] ease-[cubic-bezier(0.45,0,0.55,1)] group-hover:scale-110 md:ml-5 md:text-lg"
+        >
+          Lámina de Seguridad <Icon name="openInNew" />
+        </span>
+      </a>
     </section>
+
+
+
   </div>
   <!--Features statistics section-->
   <FeaturesStatsAlt

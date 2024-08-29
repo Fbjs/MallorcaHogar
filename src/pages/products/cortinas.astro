@@ -1,0 +1,612 @@
+---
+// Import section components
+import MainLayout from "@/layouts/MainLayout.astro";
+import ProductTabBtn from "@components/ui/buttons/ProductTabBtn.astro";
+import PrimaryCTA from "@components/ui/buttons/PrimaryCTA.astro";
+import { Image } from "astro:assets";
+import { getCollection } from "astro:content";
+import { SITE } from "@data/constants";
+import Modelos from "./Modelos.astro";
+import Icon from "@components/ui/icons/Icon.astro";
+
+// Global declaration for gsap animation library
+declare global {
+  interface Window {
+    gsap: any;
+  }
+}
+// This gets the static paths for all the unique products
+export async function getStaticPaths() {
+  const productEntries = await getCollection("products");
+  return productEntries.map((product) => ({
+    params: { slug: product.slug },
+    props: { product },
+  }));
+}
+
+const { first } = Astro.props;
+
+// Define TypeScript interface for the properties
+interface Props {
+  first?: boolean;
+}
+
+//const pageTitle: string = `${product.data.title} | ${SITE.title}`;
+
+// Define constants for styling classes
+const BUTTON_CLASS =
+  "flex w-full justify-center rounded-xl border border-transparent p-3 outline-none ring-zinc-500 transition duration-300 hover:bg-neutral-100 focus-visible:ring dark:ring-zinc-200 dark:hover:bg-neutral-700 dark:focus:outline-none md:p-5";
+
+const HEADING_CLASS = "block text-center font-bold";
+const INACTIVE_HEADING_CLASS = "text-neutral-800 dark:text-neutral-200";
+
+const baseClasses =
+  "group inline-flex items-center justify-center gap-x-2 rounded-lg px-4 py-3 text-sm font-bold text-neutral-50 ring-zinc-500 transition duration-300 focus-visible:ring outline-none";
+const borderClasses = "border border-transparent";
+const bgColorClasses =
+  "bg-orange-400 hover:bg-orange-500 active:bg-orange-500 dark:focus:outline-none";
+const disableClasses = "disabled:pointer-events-none disabled:opacity-50";
+const fontSizeClasses = "2xl:text-base";
+const ringClasses = "dark:ring-zinc-200";
+---
+
+<MainLayout title="Roller">
+  <div id="overlay" class="fixed inset-0 bg-neutral-200 dark:bg-neutral-800">
+  </div>
+
+  <section
+    class="mx-auto flex max-w-[85rem] flex-col px-4 py-10 sm:px-6 lg:px-8 lg:py-14 2xl:max-w-full"
+  >
+    <div>
+      <p
+        id="fadeText"
+        class="mb-8 max-w-prose text-pretty font-light text-neutral-700 dark:text-neutral-300 sm:text-xl"
+      ><!-- descripción superior -->
+      </p>
+    </div>
+    <div
+      class="flex flex-col items-center justify-between space-y-4 sm:flex-row sm:space-y-0"
+    >
+      <div id="fadeInUp">
+        <h1
+          class="block text-4xl font-bold tracking-tighter text-neutral-800 dark:text-neutral-200 sm:text-5xl md:text-6xl lg:text-7xl"
+        >
+        <!-- titulo h1 -->
+        Cortinas Metálicas
+        </h1>
+        <p class="text-lg text-neutral-600 dark:text-neutral-400">
+          <!-- subtitulo - titulo card -->
+          Cortinas de Seguridad
+        </p>
+      </div>
+      <div>
+        <img
+          id="fadeInMoveRight"
+          src="/src/assets/cortina-1.jpg"
+          class="w-[900px] h-[600px] rounded-[12px]"
+          alt="Roller"
+          loading={"eager"}
+        />
+      </div>
+    </div>
+  </section>
+
+  <div class="mx-auto max-w-[85rem] px-4 pt-10 sm:px-6 lg:px-8 lg:pt-14">
+    <nav
+      class="mx-auto grid max-w-6xl gap-y-px sm:flex sm:gap-x-4 sm:gap-y-0"
+      aria-label="Tabs"
+      role="tablist"
+    >
+      <!-- Tab button element 1 -->
+      <button
+      type="button"
+      class={`${BUTTON_CLASS} ${first ? "active bg-neutral-100 hover:border-transparent dark:bg-white/[.05]" : ""}`}
+      id="tabs-with-card-item-1"
+      data-target=#tabs-with-card-1
+      role="tab"
+      >
+      <!-- Tab text -->
+      <span
+        class={`${HEADING_CLASS} ${first ? "text-orange-400 dark:text-orange-300" : INACTIVE_HEADING_CLASS}`}
+      >
+      Descripción
+      </span>
+      </button>
+
+       <!-- Tab button element 2 -->
+       <button
+       type="button"
+       class={`${BUTTON_CLASS} ${first ? "active bg-neutral-100 hover:border-transparent dark:bg-white/[.05]" : ""}`}
+       id="tabs-with-card-item-2"
+       data-target=#tabs-with-card-2
+       role="tab"
+       >
+       <!-- Tab text -->
+       <span
+         class={`${HEADING_CLASS} ${first ? "text-orange-400 dark:text-orange-300" : INACTIVE_HEADING_CLASS}`}
+       >
+       Especificaciones
+       </span>
+       </button>
+
+        <!-- Tab button element 3 -->
+      <button
+      type="button"
+      class={`${BUTTON_CLASS} ${first ? "active bg-neutral-100 hover:border-transparent dark:bg-white/[.05]" : ""}`}
+      id="tabs-with-card-item-3"
+      data-target=#tabs-with-card-3
+      role="tab"
+      >
+      <!-- Tab text -->
+      <span
+        class={`${HEADING_CLASS} ${first ? "text-orange-400 dark:text-orange-300" : INACTIVE_HEADING_CLASS}`}
+      >
+      Modelos
+      </span>
+      </button>
+    </nav>
+
+    <div class="mt-12 md:mt-16">
+      <div id="tabs-with-card-1" role="tabpanel">
+        <div class="mx-auto max-w-[85rem] px-4 pb-10 sm:px-6 lg:px-8 lg:pb-14">
+          <div class="grid gap-12 md:grid-cols-2">
+            <div class="lg:w-3/4">
+              <h2
+                class="text-balance text-3xl font-bold tracking-tight text-neutral-800 dark:text-neutral-200 md:leading-tight lg:text-4xl"
+              >
+              Seguridad y Elegancia
+              </h2>
+              <p
+                class="mt-3 text-pretty text-neutral-600 dark:text-neutral-400"
+              >
+              Las cortinas metálicas son la mejor opción para asegurar puertas de fábricas, locales comerciales, tiendas, oficinas y viviendas. Con su fabricación en aluminio extruído y opciones de pintura al horno, estas cortinas combinan resistencia, seguridad y estilo.
+              </p>
+              <p class="mt-5">
+                <a
+                  class={`${baseClasses} ${borderClasses} ${bgColorClasses} ${disableClasses} ${fontSizeClasses} ${ringClasses}`}
+                  href="/contact"
+                >
+                  Solicitar <Icon name="arrowRight" />
+                </a>
+              </p>
+            </div>
+
+            <div class="space-y-6 lg:space-y-10">
+                  <div class="flex">
+                    <div>
+                      <h3 class="text-base font-bold text-neutral-800 dark:text-neutral-200 sm:text-lg">
+                        Resistencia a la corrosión
+                      </h3>
+                      <p class="mt-1 text-neutral-600 dark:text-neutral-400">
+                        El aluminio extruído proporciona una excelente resistencia a la corrosión, garantizando durabilidad y un mantenimiento mínimo.
+                      </p>
+                    </div>
+                  </div>
+                  
+                  <div class="flex">
+                    <div>
+                      <h3 class="text-base font-bold text-neutral-800 dark:text-neutral-200 sm:text-lg">
+                        Versatilidad en el diseño
+                      </h3>
+                      <p class="mt-1 text-neutral-600 dark:text-neutral-400">
+                        La posibilidad de pintar las cortinas en cualquier color permite una integración perfecta con el entorno, manteniendo la estética del lugar.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="flex">
+                    <div>
+                      <h3 class="text-base font-bold text-neutral-800 dark:text-neutral-200 sm:text-lg">
+                        Aplicaciones diversas
+                      </h3>
+                      <p class="mt-1 text-neutral-600 dark:text-neutral-400">
+                        Ideales para puertas de fábricas, locales comerciales, tiendas, oficinas y viviendas, asegurando la máxima protección en cualquier contexto.
+                      </p>
+                    </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="tabs-with-card-2" class="hidden" role="tabpanel">
+        <div class="mx-auto max-w-[85rem] px-4 pb-10 sm:px-6 lg:px-8 lg:pb-14">
+          <div class="grid w-full grid-cols-1 gap-x-16 md:grid-cols-2">
+            <div class="max-w-md space-y-6">
+                  <div>
+                    <h3 class="block font-bold text-neutral-800 dark:text-neutral-200">
+                      Composición del material
+                    </h3>
+                    <p class="text-neutral-600 dark:text-neutral-400">
+                      Fabricadas en aluminio extruído de alta calidad, lo que garantiza una resistencia superior y un peso ligero.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h3 class="block font-bold text-neutral-800 dark:text-neutral-200">
+                      Acabado superficial
+                    </h3>
+                    <p class="text-neutral-600 dark:text-neutral-400">
+                      Pintadas al horno, estas cortinas pueden personalizarse en cualquier color, ofreciendo una resistencia adicional a la intemperie y a la corrosión.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h3 class="block font-bold text-neutral-800 dark:text-neutral-200">
+                      Dimensiones personalizables
+                    </h3>
+                    <p class="text-neutral-600 dark:text-neutral-400">
+                      Disponibles en una variedad de tamaños para adaptarse a diferentes necesidades, desde pequeñas tiendas hasta grandes entradas industriales.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h3 class="block font-bold text-neutral-800 dark:text-neutral-200">
+                      Mecanismo de operación
+                    </h3>
+                    <p class="text-neutral-600 dark:text-neutral-400">
+                      Sistema de apertura y cierre manual o motorizado, según las necesidades del usuario, asegurando comodidad y funcionalidad.
+                    </p>
+                  </div>
+            </div>
+
+                <div class="mt-6 max-w-md space-y-6 md:ml-auto md:mt-0">
+                    <div>
+                      <h3 class="block font-bold text-neutral-800 dark:text-neutral-200">
+                        Propiedades mecánicas
+                      </h3>
+                      <p class="text-neutral-600 dark:text-neutral-400">
+                        Diseñadas para soportar altos niveles de estrés mecánico, proporcionando seguridad y estabilidad en su uso diario.
+                      </p>
+                    </div>
+
+                    <div>
+                      <h3 class="block font-bold text-neutral-800 dark:text-neutral-200">
+                        Estándares y certificaciones
+                      </h3>
+                      <p class="text-neutral-600 dark:text-neutral-400">
+                        Cumplen con las normativas y estándares de seguridad internacionales, garantizando un producto de alta calidad.
+                      </p>
+                    </div>
+
+                    <div>
+                      <h3 class="block font-bold text-neutral-800 dark:text-neutral-200">
+                        Accesorios y opciones adicionales
+                      </h3>
+                      <p class="text-neutral-600 dark:text-neutral-400">
+                        Disponibles con una variedad de accesorios como cerraduras de seguridad, mecanismos de automatización y sensores.
+                      </p>
+                    </div>
+
+                    <div>
+                      <h3 class="block font-bold text-neutral-800 dark:text-neutral-200">
+                        Aplicaciones recomendadas
+                      </h3>
+                      <p class="text-neutral-600 dark:text-neutral-400">
+                        Perfectas para tiendas, oficinas, fábricas, y cualquier otro lugar donde la seguridad y la estética sean una prioridad.
+                      </p>
+                    </div>
+                </div>
+
+                <!--div class="mt-6 space-y-6 md:ml-auto md:mt-0">
+                  <div class="flex flex-col">
+                    <div class="-m-1.5 overflow-x-auto">
+                      <div class="inline-block min-w-full p-1.5 align-middle">
+                        <div class="overflow-hidden">
+                          <table class="min-w-full divide-y divide-neutral-300 dark:divide-neutral-700">
+                            <thead>
+                              <tr>
+                                    <th
+                                      scope="col"
+                                      class="px-6 py-3 text-start text-xs font-medium uppercase text-neutral-500 dark:text-neutral-500"
+                                    >
+                                      AAAAAA
+                                    </th>
+                              </tr>
+                            </thead>
+                            <tbody class="divide-y divide-neutral-300 dark:divide-neutral-700">
+                                  <tr>
+                                      <td class="whitespace-nowrap px-6 py-4 text-sm font-medium text-neutral-600 dark:text-neutral-400">
+                                        SSSSSSS
+                                      </td>
+                                  </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div-->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="tabs-with-card-3" class="hidden" role="tabpanel">
+    <div class="mx-auto mb-20 flex w-full md:mb-28 2xl:w-4/5">
+      <!-- Modelos -->
+      <div class="w-full mx-auto">
+        <div id="default-carousel" class="relative overflow-hidden" data-carousel="static">
+          <div class="relative h-[700px]">
+            <!-- Carousel Items -->
+            <div class="absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-100" data-carousel-item>
+              <img src="https://mallorcahogar.neighbour.cl/media/galeria1.jpg" alt="Imagen 1" class="w-full h-full object-cover shadow-lg" />
+            </div>
+            <div class="absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-0" data-carousel-item>
+              <img src="https://mallorcahogar.neighbour.cl/media/galeria2.jpg" alt="Imagen 2" class="w-full h-full object-cover shadow-lg" />
+            </div>
+            <div class="absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-0" data-carousel-item>
+              <img src="https://mallorcahogar.neighbour.cl/media/galeria3.jpg" alt="Imagen 3" class="w-full h-full object-cover shadow-lg" />
+            </div>
+            <div class="absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-0" data-carousel-item>
+              <img src="https://mallorcahogar.neighbour.cl/media/galeria4.jpg" alt="Imagen 4" class="w-full h-full object-cover shadow-lg" />
+            </div>
+          </div>
+      
+          <!-- Previous/Next Buttons -->
+          <button type="button" class="absolute z-30 top-1/2 left-4 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full" aria-label="Anterior" data-carousel-prev>
+            &#10094;
+          </button>
+          <button type="button" class="absolute z-30 top-1/2 right-4 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full" aria-label="Siguiente" data-carousel-next>
+            &#10095;
+          </button>
+      
+          <!-- Carousel Indicators -->
+          <div class="absolute bottom-4 left-1/2 flex -translate-x-1/2 space-x-3 z-30">
+            <button type="button" class="w-4 h-4 rounded-full bg-white/60 hover:bg-white transition-shadow duration-300 shadow-md" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+            <button type="button" class="w-4 h-4 rounded-full bg-white/60 hover:bg-white transition-shadow duration-300 shadow-md" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+            <button type="button" class="w-4 h-4 rounded-full bg-white/60 hover:bg-white transition-shadow duration-300 shadow-md" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+            <button type="button" class="w-4 h-4 rounded-full bg-white/60 hover:bg-white transition-shadow duration-300 shadow-md" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+          </div>
+        </div>
+      
+        <!-- Contenedor para el texto -->
+        <div id="carousel-text" class="mt-4 text-center">
+          <p class="text-lg text-gray-800 dark:text-white"></p>
+        </div>
+      </div>
+      
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          const carousel = document.getElementById('default-carousel');
+          if (!carousel) {
+            console.error('El carrusel no se encontró.');
+            return;
+          }
+      
+          const items = Array.from(carousel.querySelectorAll('[data-carousel-item]')) as HTMLElement[];
+          const texts = document.getElementById('carousel-text') as HTMLElement | null;
+          const indicators = Array.from(carousel.querySelectorAll('[data-carousel-slide-to]')) as HTMLElement[];
+          let currentIndex = 0;
+      
+          const textsArray = [
+            {
+              title: 'Modelo 1',
+              description: 'Características del producto 1.',
+            },
+            {
+              title: 'Modelo 2',
+              description: 'Características del producto 2.',
+            },
+            {
+              title: 'Modelo 3',
+              description: 'Características del producto 3.',
+            },
+            {
+              title: 'Modelo 4',
+              description: 'Características del producto 4.',
+            },
+          ];
+      
+          function showItem(index: number) {
+            items.forEach((item, i) => {
+              const element = item as HTMLElement;
+              element.style.opacity = i === index ? '1' : '0';
+              element.style.zIndex = i === index ? '1' : '0';
+            });
+      
+            if (texts) {
+              const { title, description } = textsArray[index];
+              texts.innerHTML = `
+                <h2 class="text-2xl font-bold text-gray-800 dark:text-white mb-2">${title}</h2>
+                <p class="text-lg text-gray-800 dark:text-white">${description}</p>
+              `;
+            }
+      
+            indicators.forEach((indicator, i) => {
+              indicator.classList.toggle('bg-white', i === index);
+              indicator.classList.toggle('bg-white/60', i !== index);
+            });
+          }
+      
+          function showNextItem() {
+            currentIndex = (currentIndex + 1) % items.length;
+            showItem(currentIndex);
+          }
+      
+          function showPreviousItem() {
+            currentIndex = (currentIndex - 1 + items.length) % items.length;
+            showItem(currentIndex);
+          }
+      
+          function goToItem(index: number) {
+            currentIndex = index;
+            showItem(currentIndex);
+          }
+      
+          // Auto-play every 5 seconds
+          const intervalId = setInterval(showNextItem, 8000);
+      
+          // Event listeners for indicators
+          indicators.forEach((indicator, i) => {
+            indicator.addEventListener('click', () => {
+              clearInterval(intervalId); // Stop auto-play when user interacts
+              goToItem(i);
+            });
+          });
+      
+          // Event listeners for Previous/Next buttons
+          const prevButton = carousel.querySelector('[data-carousel-prev]') as HTMLElement;
+          const nextButton = carousel.querySelector('[data-carousel-next]') as HTMLElement;
+      
+          if (prevButton && nextButton) {
+            prevButton.addEventListener('click', () => {
+              clearInterval(intervalId); // Stop auto-play when user interacts
+              showPreviousItem();
+            });
+      
+            nextButton.addEventListener('click', () => {
+              clearInterval(intervalId); // Stop auto-play when user interacts
+              showNextItem();
+            });
+          }
+      
+          // Initialize first item
+          showItem(currentIndex);
+        });
+      </script>
+      <!-- Modelos -->
+    </div>
+  </div>
+</MainLayout>
+
+<script>
+  import { gsap } from "gsap";
+
+  type AnimationSettings = {
+    autoAlpha?: number;
+    y?: number;
+    x?: number;
+    willChange?: string;
+  };
+
+  function setElementAnimationDefaults(
+    id: string,
+    settings: AnimationSettings
+  ) {
+    gsap.set(id, settings);
+  }
+
+  setElementAnimationDefaults("#fadeText", {
+    autoAlpha: 0,
+    y: 50,
+    willChange: "transform, opacity",
+  });
+
+  setElementAnimationDefaults("#fadeInUp", {
+    autoAlpha: 0,
+    y: 50,
+    willChange: "transform, opacity",
+  });
+
+  setElementAnimationDefaults("#fadeInMoveRight", {
+    autoAlpha: 0,
+    x: 300,
+    willChange: "transform, opacity",
+  });
+
+  let timeline = gsap.timeline({ defaults: { overwrite: "auto" } });
+
+  timeline.to("#fadeText", {
+    duration: 1.5,
+    autoAlpha: 1,
+    y: 0,
+    delay: 1,
+    ease: "power2.out",
+  });
+
+  timeline.to(
+    "#fadeInUp",
+    { duration: 1.5, autoAlpha: 1, y: 0, ease: "power2.out" },
+    "-=1.2"
+  );
+
+  timeline.to(
+    "#fadeInMoveRight",
+    { duration: 1.5, autoAlpha: 1, x: 0, ease: "power2.inOut" },
+    "-=1.4"
+  );
+
+  timeline.to("#overlay", { duration: 1, autoAlpha: 0, delay: 0.2 });
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    function setButtonInactive(btn: any, activeButton: any) {
+      if (btn !== activeButton) {
+        btn.classList.remove(
+          "active",
+          "bg-neutral-100",
+          "hover:border-transparent",
+          "dark:bg-white/[.05]"
+        );
+
+        const tabId = btn.getAttribute("data-target");
+        if (tabId) {
+          const contentElement = document.querySelector(tabId);
+          if (contentElement) {
+            contentElement.classList.add("hidden");
+          }
+        }
+
+        changeHeadingStyle(
+          btn,
+          ["text-neutral-800", "dark:text-neutral-200"],
+          ["text-orange-400", "dark:text-orange-300"]
+        );
+      }
+    }
+
+    function activateButton(button: any) {
+      button.classList.add(
+        "active",
+        "bg-neutral-100",
+        ",hover:border-transparent",
+        "dark:bg-white/[.05]"
+      );
+
+      const tabId = button.getAttribute("data-target");
+      if (tabId) {
+        const contentElementToShow = document.querySelector(tabId);
+        if (contentElementToShow) {
+          contentElementToShow.classList.remove("hidden");
+        }
+      }
+
+      changeHeadingStyle(
+        button,
+        ["text-orange-400", "dark:text-orange-300"],
+        ["text-neutral-800", "dark:text-neutral-200"]
+      );
+    }
+
+    function changeHeadingStyle(
+      button: any,
+      addClasses: any,
+      removeClasses: any
+    ) {
+      let heading = button.querySelector("span");
+      if (heading) {
+        heading.classList.remove(...removeClasses);
+        heading.classList.add(...addClasses);
+      }
+    }
+
+    const tabButtons = document.querySelectorAll("[data-target]");
+
+    if (tabButtons.length > 0) {
+      changeHeadingStyle(
+        tabButtons[0],
+        ["text-orange-400", "dark:text-orange-300"],
+        []
+      );
+    }
+
+    tabButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        tabButtons.forEach((btn) => setButtonInactive(btn, button));
+        activateButton(button);
+      });
+    });
+  });
+</script>
