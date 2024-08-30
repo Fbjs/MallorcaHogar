@@ -82,7 +82,7 @@ const ringClasses = "dark:ring-zinc-200";
       <div>
         <img
           id="fadeInMoveRight"
-          src="/src/assets/climatika-1.jpg"
+          src="/src/assets/climatika-1.jpeg"
           class="w-[900px] h-[600px] rounded-[12px]"
           alt="Climatika"
           loading={"eager"}
@@ -130,20 +130,20 @@ const ringClasses = "dark:ring-zinc-200";
        </button>
 
         <!-- Tab button element 3 -->
-      <button
+      <!--button
       type="button"
       class={`${BUTTON_CLASS} ${first ? "active bg-neutral-100 hover:border-transparent dark:bg-white/[.05]" : ""}`}
       id="tabs-with-card-item-3"
       data-target=#tabs-with-card-3
       role="tab"
       >
-      <!-- Tab text -->
+      < Tab text >
       <span
         class={`${HEADING_CLASS} ${first ? "text-orange-400 dark:text-orange-300" : INACTIVE_HEADING_CLASS}`}
       >
-      Modelos
+      Galería
       </span>
-      </button>
+      </button-->
     </nav>
 
     <div class="mt-12 md:mt-16">
@@ -326,10 +326,10 @@ const ringClasses = "dark:ring-zinc-200";
   <div id="tabs-with-card-3" class="hidden" role="tabpanel">
     <div class="mx-auto mb-20 flex w-full md:mb-28 2xl:w-4/5">
       <!-- Modelos -->
-      <div class="w-full mx-auto">
+      <!--div class="w-full mx-auto">
         <div id="default-carousel" class="relative overflow-hidden" data-carousel="static">
           <div class="relative h-[700px]">
-            <!-- Carousel Items -->
+            < Carousel Items >
             <div class="absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-100" data-carousel-item>
               <img src="https://mallorcahogar.neighbour.cl/media/galeria1.jpg" alt="Imagen 1" class="w-full h-full object-cover shadow-lg" />
             </div>
@@ -344,7 +344,7 @@ const ringClasses = "dark:ring-zinc-200";
             </div>
           </div>
       
-          <!-- Previous/Next Buttons -->
+          < Previous/Next Buttons >
           <button type="button" class="absolute z-30 top-1/2 left-4 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full" aria-label="Anterior" data-carousel-prev>
             &#10094;
           </button>
@@ -352,7 +352,7 @@ const ringClasses = "dark:ring-zinc-200";
             &#10095;
           </button>
       
-          <!-- Carousel Indicators -->
+          < Carousel Indicators >
           <div class="absolute bottom-4 left-1/2 flex -translate-x-1/2 space-x-3 z-30">
             <button type="button" class="w-4 h-4 rounded-full bg-white/60 hover:bg-white transition-shadow duration-300 shadow-md" aria-label="Slide 1" data-carousel-slide-to="0"></button>
             <button type="button" class="w-4 h-4 rounded-full bg-white/60 hover:bg-white transition-shadow duration-300 shadow-md" aria-label="Slide 2" data-carousel-slide-to="1"></button>
@@ -361,11 +361,11 @@ const ringClasses = "dark:ring-zinc-200";
           </div>
         </div>
       
-        <!-- Contenedor para el texto -->
+        < Contenedor para el texto >
         <div id="carousel-text" class="mt-4 text-center">
           <p class="text-lg text-gray-800 dark:text-white"></p>
         </div>
-      </div>
+      </div-->
       
       <script>
         document.addEventListener('DOMContentLoaded', function () {
@@ -406,13 +406,13 @@ const ringClasses = "dark:ring-zinc-200";
               element.style.zIndex = i === index ? '1' : '0';
             });
       
-            if (texts) {
+            /*if (texts) {
               const { title, description } = textsArray[index];
               texts.innerHTML = `
                 <h2 class="text-2xl font-bold text-gray-800 dark:text-white mb-2">${title}</h2>
                 <p class="text-lg text-gray-800 dark:text-white">${description}</p>
               `;
-            }
+            }*/
       
             indicators.forEach((indicator, i) => {
               indicator.classList.toggle('bg-white', i === index);

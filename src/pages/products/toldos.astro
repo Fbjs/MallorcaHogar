@@ -141,7 +141,7 @@ const ringClasses = "dark:ring-zinc-200";
       <span
         class={`${HEADING_CLASS} ${first ? "text-orange-400 dark:text-orange-300" : INACTIVE_HEADING_CLASS}`}
       >
-      Modelos
+      Galería
       </span>
       </button>
     </nav>
@@ -331,16 +331,34 @@ const ringClasses = "dark:ring-zinc-200";
           <div class="relative h-[700px]">
             <!-- Carousel Items -->
             <div class="absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-100" data-carousel-item>
-              <img src="https://mallorcahogar.neighbour.cl/media/galeria1.jpg" alt="Imagen 1" class="w-full h-full object-cover shadow-lg" />
+              <img src="https://mallorcahogar.neighbour.cl/media/galeria-toldos-1.jpg" alt="Imagen 1" class="w-full h-full object-cover shadow-lg" />
             </div>
             <div class="absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-0" data-carousel-item>
-              <img src="https://mallorcahogar.neighbour.cl/media/galeria2.jpg" alt="Imagen 2" class="w-full h-full object-cover shadow-lg" />
+              <img src="https://mallorcahogar.neighbour.cl/media/galeria-toldos-2.jpg" alt="Imagen 2" class="w-full h-full object-cover shadow-lg" />
             </div>
             <div class="absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-0" data-carousel-item>
-              <img src="https://mallorcahogar.neighbour.cl/media/galeria3.jpg" alt="Imagen 3" class="w-full h-full object-cover shadow-lg" />
+              <img src="https://mallorcahogar.neighbour.cl/media/galeria-toldos-3.jpg" alt="Imagen 3" class="w-full h-full object-cover shadow-lg" />
             </div>
             <div class="absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-0" data-carousel-item>
-              <img src="https://mallorcahogar.neighbour.cl/media/galeria4.jpg" alt="Imagen 4" class="w-full h-full object-cover shadow-lg" />
+              <img src="https://mallorcahogar.neighbour.cl/media/galeria-toldos-4.jpg" alt="Imagen 4" class="w-full h-full object-cover shadow-lg" />
+            </div>
+            <div class="absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-100" data-carousel-item>
+              <img src="https://mallorcahogar.neighbour.cl/media/galeria-toldos-5.jpg" alt="Imagen 1" class="w-full h-full object-cover shadow-lg" />
+            </div>
+            <div class="absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-0" data-carousel-item>
+              <img src="https://mallorcahogar.neighbour.cl/media/galeria-toldos-6.jpg" alt="Imagen 2" class="w-full h-full object-cover shadow-lg" />
+            </div>
+            <div class="absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-0" data-carousel-item>
+              <img src="https://mallorcahogar.neighbour.cl/media/galeria-toldos-7.jpg" alt="Imagen 3" class="w-full h-full object-cover shadow-lg" />
+            </div>
+            <div class="absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-0" data-carousel-item>
+              <img src="https://mallorcahogar.neighbour.cl/media/galeria-toldos-8.jpg" alt="Imagen 4" class="w-full h-full object-cover shadow-lg" />
+            </div>
+            <div class="absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-0" data-carousel-item>
+              <img src="https://mallorcahogar.neighbour.cl/media/galeria-toldos-9.jpg" alt="Imagen 3" class="w-full h-full object-cover shadow-lg" />
+            </div>
+            <div class="absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-0" data-carousel-item>
+              <img src="https://mallorcahogar.neighbour.cl/media/galeria-toldos-10.jpg" alt="Imagen 4" class="w-full h-full object-cover shadow-lg" />
             </div>
           </div>
       
@@ -358,6 +376,12 @@ const ringClasses = "dark:ring-zinc-200";
             <button type="button" class="w-4 h-4 rounded-full bg-white/60 hover:bg-white transition-shadow duration-300 shadow-md" aria-label="Slide 2" data-carousel-slide-to="1"></button>
             <button type="button" class="w-4 h-4 rounded-full bg-white/60 hover:bg-white transition-shadow duration-300 shadow-md" aria-label="Slide 3" data-carousel-slide-to="2"></button>
             <button type="button" class="w-4 h-4 rounded-full bg-white/60 hover:bg-white transition-shadow duration-300 shadow-md" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+            <button type="button" class="w-4 h-4 rounded-full bg-white/60 hover:bg-white transition-shadow duration-300 shadow-md" aria-label="Slide 5" data-carousel-slide-to="3"></button>
+            <button type="button" class="w-4 h-4 rounded-full bg-white/60 hover:bg-white transition-shadow duration-300 shadow-md" aria-label="Slide 6" data-carousel-slide-to="3"></button>
+            <button type="button" class="w-4 h-4 rounded-full bg-white/60 hover:bg-white transition-shadow duration-300 shadow-md" aria-label="Slide 7" data-carousel-slide-to="3"></button>
+            <button type="button" class="w-4 h-4 rounded-full bg-white/60 hover:bg-white transition-shadow duration-300 shadow-md" aria-label="Slide 8" data-carousel-slide-to="3"></button>
+            <button type="button" class="w-4 h-4 rounded-full bg-white/60 hover:bg-white transition-shadow duration-300 shadow-md" aria-label="Slide 9" data-carousel-slide-to="3"></button>
+            <button type="button" class="w-4 h-4 rounded-full bg-white/60 hover:bg-white transition-shadow duration-300 shadow-md" aria-label="Slide 10" data-carousel-slide-to="3"></button>
           </div>
         </div>
       
@@ -406,13 +430,13 @@ const ringClasses = "dark:ring-zinc-200";
               element.style.zIndex = i === index ? '1' : '0';
             });
       
-            if (texts) {
+            /*if (texts) {
               const { title, description } = textsArray[index];
               texts.innerHTML = `
                 <h2 class="text-2xl font-bold text-gray-800 dark:text-white mb-2">${title}</h2>
                 <p class="text-lg text-gray-800 dark:text-white">${description}</p>
               `;
-            }
+            }*/
       
             indicators.forEach((indicator, i) => {
               indicator.classList.toggle('bg-white', i === index);
